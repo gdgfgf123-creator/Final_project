@@ -15,8 +15,12 @@ public class Player : MonoBehaviour
             movement.MovePlayer(direction);
     }
 
-    public void BasicAttack() { }
-
+    [SerializeField] private BasicAttack basicAttack;
+    public void BasicAttack()
+    {
+        if (basicAttack != null)
+            basicAttack.OnClick();
+    }
     public void SwitchPower(int slot) { }
 
     public void TakeDamage(int amount) { }

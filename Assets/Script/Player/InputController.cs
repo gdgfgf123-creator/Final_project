@@ -12,6 +12,7 @@ public class InputController : MonoBehaviour
     private void Update()
     {
         ReadMovementInput();
+        ReadAttackInput();
     }
 
     public void ReadMovementInput()
@@ -27,7 +28,11 @@ public class InputController : MonoBehaviour
             player.Move(direction.normalized);
     }
 
-    public void ReadAttackInput() { }
+    public void ReadAttackInput() 
+    {
+        if (Input.GetMouseButton(0) && player != null)
+            player.BasicAttack();
+    }
 
     public void ReadPowerInput() { }
 }
