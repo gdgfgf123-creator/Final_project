@@ -11,8 +11,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float moveDistance = 3f;
 
     [Header("Attack")]
-    [SerializeField] private EnemyBullet bulletPrefab;
-    [SerializeField] private Transform firePoint;
+    [SerializeField] protected EnemyBullet bulletPrefab;
+    [SerializeField] protected Transform firePoint;
     [SerializeField] private float fireInterval = 1f;
 
     protected Rigidbody2D rb;
