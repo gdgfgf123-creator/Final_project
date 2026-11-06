@@ -134,6 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21c6e7bd6ce3aa84b832cb519681f782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
+  damage: 1
+  isHoldingClick: 0
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  fireInterval: 0.2
   speed: 10
   lifeTime: 3
 --- !u!58 &2015934327756131321

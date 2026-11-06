@@ -1,55 +1,84 @@
+using System.Collections;
 using UnityEngine;
 
-public class Boss : Enemy
+public abstract class Boss : Enemy
 {
-    [Header("Boss Attack")]
-    [SerializeField, Min(1)]
-    private int bulletCount = 7;
+    [Header("Attack Patterns")]
+    [SerializeField] private BossAttack[] attackPatterns;
+    [SerializeField, Min(0f)] private float skillCooldown = 3f;
 
-    [SerializeField, Range(0f, 360f)]
-    private float spreadAngle = 120f;
+    [Header("Cooldown Shot")]
+    [SerializeField, Min(1)] private int cooldownBulletCount = 7;
+    [SerializeField, Range(0f, 360f)] private float cooldownSpread = 150f;
 
-    // ไม่ใช้การเดินซ้าย–ขวาของ Enemy
-    protected override void FixedUpdate()
-    {
-    }
+    [Header("Contact Damage")]
+    [SerializeField, Min(1)] private int contactDamage = 1;
+
+    private bool isAttacking;
+    private float nextSkillTime;
 
     protected override void Shoot()
     {
-        if (bulletPrefab == null || firePoint == null)
+        if (isDead || isAttacking)
             return;
 
-        int count = Mathf.Max(1, bulletCount);
-
-        // วงกลมเต็มไม่สร้างกระสุนซ้ำที่มุมเริ่มกับมุมสุดท้าย
-        float angleStep = count <= 1
-            ? 0f
-            : spreadAngle / (spreadAngle >= 360f ? count : count - 1);
-
-        float startAngle = count <= 1 ? 0f : -spreadAngle / 2f;
-
-        for (int i = 0; i < count; i++)
+        if (Time.time < nextSkillTime)
         {
-            float angle = startAngle + angleStep * i;
-
-            Vector3 direction =
-                Quaternion.Euler(0f, 0f, angle) * Vector3.down;
-
-            EnemyBullet bullet = Instantiate(
-                bulletPrefab,
-                firePoint.position,
-                Quaternion.identity
+            BossAttack.ShootFan(
+                bulletPrefab, firePoint, cooldownBulletCount, cooldownSpread
             );
+            return;
+        }
 
-            bullet.SetDirection(
-                new Vector2(direction.x, direction.y)
-            );
+        if (attackPatterns == null)
+            return;
+
+        int availableCount = 0;
+
+        foreach (BossAttack attack in attackPatterns)
+        {
+            if (attack != null && attack.isActiveAndEnabled)
+                availableCount++;
+        }
+
+        if (availableCount == 0)
+            return;
+
+        int selectedIndex = Random.Range(0, availableCount);
+
+        foreach (BossAttack attack in attackPatterns)
+        {
+            if (attack == null || !attack.isActiveAndEnabled)
+                continue;
+
+            if (selectedIndex == 0)
+            {
+                StartCoroutine(RunAttack(attack));
+                return;
+            }
+
+            selectedIndex--;
         }
     }
 
-    protected override void Die()
+    private IEnumerator RunAttack(BossAttack attack)
     {
-        Debug.Log("Boss defeated!");
-        base.Die();
+        isAttacking = true;
+        yield return attack.Execute(this);
+
+        nextSkillTime = Time.time + skillCooldown;
+        isAttacking = false;
     }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (isDead)
+            return;
+
+        Player player = other.GetComponentInParent<Player>();
+
+        if (player != null)
+            player.TakeDamage(contactDamage);
+    }
+
 }

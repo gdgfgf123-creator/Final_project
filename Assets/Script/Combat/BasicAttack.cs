@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public class BasicAttack : MonoBehaviour
 {
-    [SerializeField] private int damage = 10;
+    [SerializeField] protected int damage = 10;
     [SerializeField] private bool isHoldingClick;
 
     [SerializeField] private Bullet bulletPrefab;
@@ -12,11 +13,14 @@ public class BasicAttack : MonoBehaviour
     private Camera mainCamera;
     private float nextFireTime;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         mainCamera = Camera.main;
     }
-
+    public abstract class BossAttack : MonoBehaviour
+    {
+        public abstract IEnumerator Execute(Boss boss);
+    }
     public void OnClick()
     {
         Shoot();

@@ -1,18 +1,19 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Bullet : MonoBehaviour
+public class Bullet : BasicAttack
 {
     [SerializeField] private float speed = 10f;
     [SerializeField] private float lifeTime = 3f;
-    [SerializeField] private int damage = 10;
 
     private Rigidbody2D rb;
     private Vector2 direction = Vector2.up;
     private bool hasHit;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -35,25 +36,37 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (hasHit) return;
+        if (hasHit)
+            return;
 
         rb.MovePosition(
-            rb.position +
-            direction * speed * Time.fixedDeltaTime
+            rb.position + direction * speed * Time.fixedDeltaTime
         );
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (hasHit) return;
+        if (hasHit)
+            return;
+
+        if (other.TryGetComponent(out SalamanderGuardAttack guard))
+        {
+            if (guard.IsGuarding)
+            {
+                hasHit = true;
+                Destroy(gameObject);
+            }
+
+            return;
+        }
 
         Enemy enemy = other.GetComponentInParent<Enemy>();
 
-        if (enemy == null) return;
+        if (enemy == null)
+            return;
 
         hasHit = true;
         enemy.TakeDamage(damage);
-
         Destroy(gameObject);
     }
 }

@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int currentHP = 3;
     [SerializeField] private int maxHP = 10;
-    [SerializeField] private int basicAttackDamage = 10;
+    [SerializeField] public int basicAttackDamage = 10;
     [SerializeField] private int selectedPower = 1;
     [SerializeField] private float invincibleTime = 1f;
 
