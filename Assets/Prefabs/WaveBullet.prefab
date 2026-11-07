@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBullet
   speed: 5
-  lifeTime: 5
+  lifeTime: 2
   damage: 1
   waveWidth: 0.6
   waveFrequency: 1
