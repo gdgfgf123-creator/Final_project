@@ -3,10 +3,11 @@
     [RequireComponent(typeof(Rigidbody2D))]
     public class Enemy : MonoBehaviour
     {
+        public int CurrentHP => currentHP;
         [SerializeField, Min(1)] private int bulletCount = 3;
         [SerializeField, Range(0f, 180f)] private float spreadAngle = 40f;
         
-    [Header("Health")]
+        [Header("Health")]
         [SerializeField] protected int currentHP = 30;
 
         [Header("Movement")]
@@ -90,9 +91,19 @@
                 Die();
         }
 
-        protected virtual void Die()
+    protected virtual void Die()
+    {
+        if (isDead)
+            return;
+
+        isDead = true;
+
+        if (ScoreTracker.Instance != null)
         {
-            isDead = true;
-            Destroy(gameObject);
+            int points = this is Boss ? 2000 : 20;
+            ScoreTracker.Instance.AddScore(points);
         }
+
+        Destroy(gameObject);
     }
+}

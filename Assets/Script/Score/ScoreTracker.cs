@@ -2,15 +2,33 @@ using UnityEngine;
 
 public class ScoreTracker : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static ScoreTracker Instance { get; private set; }
+
+    public int Score { get; private set; }
+
+    private void Awake()
     {
-        
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        Score = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddScore(int amount)
     {
-        
+        if (amount <= 0)
+            return;
+
+        Score += amount;
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 }
