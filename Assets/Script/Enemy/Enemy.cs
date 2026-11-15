@@ -82,15 +82,18 @@
     }
 
     public virtual void TakeDamage(int damage)
-        {
-            if (isDead || damage <= 0) return;
+    {
+        if (isDead || damage <= 0)
+            return;
 
-            currentHP = Mathf.Max(0, currentHP - damage);
+        currentHP = Mathf.Max(0, currentHP - damage);
 
-            if (currentHP <= 0)
-                Die();
-        }
+        if (ScoreTracker.Instance != null)
+            ScoreTracker.Instance.RegisterHit();
 
+        if (currentHP <= 0)
+            Die();
+    }
     protected virtual void Die()
     {
         if (isDead)

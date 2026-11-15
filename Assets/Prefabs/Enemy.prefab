@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   bulletCount: 3
   spreadAngle: 40
-  currentHP: 3
+  currentHP: 25
   moveSpeed: 2
   moveDistance: 3
   bulletPrefab: {fileID: 8592482104669203654, guid: 2a022723463163749a0772d16026e05b, type: 3}

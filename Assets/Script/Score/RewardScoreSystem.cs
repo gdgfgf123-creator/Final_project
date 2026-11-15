@@ -6,9 +6,7 @@ public class RewardScoreSystem : MonoBehaviour
 
     public void GiveReward()
     {
-        ScoreTracker tracker = ScoreTracker.Instance;
-
-        if (tracker != null)
-            tracker.AddScore(scoreReward);
+        if (ScoreTracker.Instance != null)
+            ScoreTracker.Instance.AddKillScore(scoreReward);
     }
 }

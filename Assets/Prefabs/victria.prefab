@@ -569,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VictoriaBoss
   bulletCount: 3
   spreadAngle: 40
-  currentHP: 30
+  currentHP: 50
   moveSpeed: 2
   moveDistance: 3
   bulletPrefab: {fileID: 8592482104669203654, guid: 2a022723463163749a0772d16026e05b, type: 3}
