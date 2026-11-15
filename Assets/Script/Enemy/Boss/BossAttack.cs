@@ -15,23 +15,25 @@ public abstract class BossAttack : MonoBehaviour
             return;
 
         int count = Mathf.Max(1, bulletCount);
+        float spread = Mathf.Clamp(spreadAngle, 0f, 360f);
+        float startAngle = 0f;
+        float angleStep = 0f;
+
+        if (count > 1)
+        {
+            int divisions = spread >= 360f ? count : count - 1;
+            startAngle = -spread * 0.5f;
+            angleStep = spread / divisions;
+        }
 
         for (int i = 0; i < count; i++)
         {
-            float angle = 0f;
-
-            if (count > 1)
-            {
-                float position = (float)i / (count - 1);
-                angle = Mathf.Lerp(
-                    -spreadAngle * 0.5f,
-                    spreadAngle * 0.5f,
-                    position
-                );
-            }
+            float angle = startAngle + angleStep * i;
 
             Vector3 direction =
-                Quaternion.Euler(0f, 0f, angle) * Vector3.down;
+                firePoint.rotation *
+                Quaternion.Euler(0f, 0f, angle) *
+                Vector3.down;
 
             EnemyBullet bullet = Instantiate(
                 prefab, firePoint.position, Quaternion.identity

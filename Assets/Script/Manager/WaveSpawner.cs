@@ -24,7 +24,7 @@ public class WaveSpawner : MonoBehaviour
     [Header("Boss")]
     [SerializeField] private Boss bossPrefab;
     [SerializeField] private Transform bossSpawnPoint;
-    [SerializeField] private BossHealthUI bossHealthUI;
+    
 
     private readonly List<Enemy> aliveEnemies = new List<Enemy>();
 
@@ -94,8 +94,10 @@ public class WaveSpawner : MonoBehaviour
             bossSpawnPoint.rotation
         );
 
-        if (bossHealthUI != null)
-            bossHealthUI.Show(boss);
+        BossHealthUI healthUI = boss.GetComponentInChildren<BossHealthUI>(true);
+
+        if (healthUI != null)
+            healthUI.Show(boss);
 
         Debug.Log("Boss spawned");
     }

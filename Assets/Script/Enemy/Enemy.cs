@@ -98,11 +98,8 @@
 
         isDead = true;
 
-        if (ScoreTracker.Instance != null)
-        {
-            int points = this is Boss ? 2000 : 20;
-            ScoreTracker.Instance.AddScore(points);
-        }
+        if (TryGetComponent<RewardScoreSystem>(out var reward))
+            reward.GiveReward();
 
         Destroy(gameObject);
     }

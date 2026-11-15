@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class RewardScoreSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField, Min(0)] private int scoreReward = 100;
 
-    // Update is called once per frame
-    void Update()
+    public void GiveReward()
     {
-        
+        ScoreTracker tracker = ScoreTracker.Instance;
+
+        if (tracker != null)
+            tracker.AddScore(scoreReward);
     }
 }

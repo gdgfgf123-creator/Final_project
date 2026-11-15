@@ -3,6 +3,8 @@ using UnityEngine;
 
 public abstract class Boss : Enemy
 {
+    [SerializeField] private bool enableBossSkills = false;
+
     [Header("Phase 1 Skills")]
     [SerializeField] private BossAttack[] attackPatterns;
 
@@ -44,20 +46,9 @@ public abstract class Boss : Enemy
         if (isDead || isAttacking)
             return;
 
-        if (Time.time < nextSkillTime)
+        if (!enableBossSkills || Time.time < nextSkillTime)
         {
-            int count = IsPhaseTwo
-                ? phaseTwoBulletCount
-                : cooldownBulletCount;
-
-            float spread = IsPhaseTwo
-                ? phaseTwoSpread
-                : cooldownSpread;
-
-            BossAttack.ShootFan(
-                bulletPrefab, firePoint, count, spread
-            );
-
+            ShootRegularVolley();
             return;
         }
 
@@ -99,6 +90,14 @@ public abstract class Boss : Enemy
 
             selectedIndex--;
         }
+    }
+
+    private void ShootRegularVolley()
+    {
+        int count = IsPhaseTwo ? phaseTwoBulletCount : cooldownBulletCount;
+        float spread = IsPhaseTwo ? phaseTwoSpread : cooldownSpread;
+
+        BossAttack.ShootFan(bulletPrefab, firePoint, count, spread);
     }
 
     private IEnumerator RunAttack(BossAttack attack)

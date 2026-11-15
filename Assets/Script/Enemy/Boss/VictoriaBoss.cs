@@ -2,27 +2,29 @@ using UnityEngine;
 
 public class VictoriaBoss : Boss
 {
-    [Header("Phase 2 Rotation")]
+    [Header("Fire Point Rotation")]
+    [SerializeField] private float phaseOneRotateSpeed = 20f;
     [SerializeField] private float firePointRotateSpeed = 45f;
 
     protected override void Update()
     {
-        if (!isDead && IsPhaseTwo && firePoint != null)
+        if (!isDead && firePoint != null)
         {
+            float rotationSpeed = IsPhaseTwo
+                ? firePointRotateSpeed
+                : phaseOneRotateSpeed;
+
             firePoint.Rotate(
                 0f,
                 0f,
-                firePointRotateSpeed * Time.deltaTime
+                rotationSpeed * Time.deltaTime
             );
         }
 
         base.Update();
     }
 
-    protected override void FixedUpdate()
-    {
-        // วิกตอเลียยืนประจำจุด
-    }
+    
 
     protected override void Die()
     {
