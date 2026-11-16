@@ -71,39 +71,57 @@
             rb.MovePosition(new Vector2(nextX, rb.position.y));
         }
 
-    protected virtual void Shoot()
-    {
-        BossAttack.ShootFan(
-            bulletPrefab,
-            firePoint,
-            bulletCount,
-            spreadAngle
-        );
+        protected bool TryGetAimDirection(out Vector2 direction)
+        {
+            direction = Vector2.zero;
+
+            if (firePoint == null)
+                return false;
+
+            Player target = FindFirstObjectByType<Player>();
+
+            if (target == null || !target.isActiveAndEnabled)
+                return false;
+
+            direction = (Vector2)(target.transform.position - firePoint.position);
+            return direction.sqrMagnitude > 0.001f;
+        }
+
+        protected virtual void Shoot()
+        {
+            if (bulletPrefab == null || !TryGetAimDirection(out Vector2 direction))
+                return;
+
+            EnemyBullet bullet = Instantiate(
+                bulletPrefab, firePoint.position, Quaternion.identity
+            );
+
+            bullet.SetDirection(direction);
+        }
+
+        public virtual void TakeDamage(int damage)
+        {
+            if (isDead || damage <= 0)
+                return;
+
+            currentHP = Mathf.Max(0, currentHP - damage);
+
+            if (ScoreTracker.Instance != null)
+                ScoreTracker.Instance.RegisterHit();
+
+            if (currentHP <= 0)
+                Die();
+        }
+        protected virtual void Die()
+        {
+            if (isDead)
+                return;
+
+            isDead = true;
+
+            if (TryGetComponent<RewardScoreSystem>(out var reward))
+                reward.GiveReward();
+
+            Destroy(gameObject);
+        }
     }
-
-    public virtual void TakeDamage(int damage)
-    {
-        if (isDead || damage <= 0)
-            return;
-
-        currentHP = Mathf.Max(0, currentHP - damage);
-
-        if (ScoreTracker.Instance != null)
-            ScoreTracker.Instance.RegisterHit();
-
-        if (currentHP <= 0)
-            Die();
-    }
-    protected virtual void Die()
-    {
-        if (isDead)
-            return;
-
-        isDead = true;
-
-        if (TryGetComponent<RewardScoreSystem>(out var reward))
-            reward.GiveReward();
-
-        Destroy(gameObject);
-    }
-}

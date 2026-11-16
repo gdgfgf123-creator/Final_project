@@ -21,7 +21,7 @@ public class ComboUI : MonoBehaviour
 
         displayedCombo = combo;
         comboText.text = combo > 0
-            ? $"Combo {combo}  ?{tracker.ScoreMultiplier:0.00}"
+            ? $"Combo {combo}  x{tracker.ScoreMultiplier:0.00}"
             : string.Empty;
     }
 }

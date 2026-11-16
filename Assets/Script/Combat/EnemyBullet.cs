@@ -7,6 +7,9 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] protected float lifeTime = 5f;
     [SerializeField] protected int damage = 1;
 
+    [SerializeField] private Transform directionVisual;
+    [SerializeField] private float spriteAngleOffset;
+
     protected Rigidbody2D rb;
     protected Vector2 direction = Vector2.down;
     protected bool hasHit;
@@ -25,8 +28,16 @@ public class EnemyBullet : MonoBehaviour
 
     public void SetDirection(Vector2 shootDirection)
     {
-        if (shootDirection.sqrMagnitude > 0.001f)
-            direction = shootDirection.normalized;
+        if (shootDirection.sqrMagnitude <= 0.001f)
+            return;
+
+        direction = shootDirection.normalized;
+
+        if (directionVisual == null)
+            return;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        directionVisual.rotation = Quaternion.Euler(0f, 0f, angle + spriteAngleOffset);
     }
 
     protected virtual void FixedUpdate()
@@ -52,4 +63,5 @@ public class EnemyBullet : MonoBehaviour
 
         Destroy(gameObject);
     }
+
 }

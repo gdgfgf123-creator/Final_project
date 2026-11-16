@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private float nextDamageTime;
     private Coroutine blinkCoroutine;
     private Color normalColor;
-
+    [SerializeField] private GameOverUI gameOverUI;
     private void Awake()
     {
         if (playerSprite == null)
@@ -64,9 +64,13 @@ public class Player : MonoBehaviour
 
         Debug.Log("Player HP: " + currentHP);
 
-        if (currentHP <= 0)
+        if (currentHP == 0)
         {
             Debug.Log("Game Over");
+
+            if (gameOverUI != null)
+                gameOverUI.Show();
+
             gameObject.SetActive(false);
             return;
         }
