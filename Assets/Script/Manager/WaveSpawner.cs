@@ -9,11 +9,8 @@ public class WaveSpawner : MonoBehaviour
     {
         public Enemy[] enemyPrefabs;
 
-        [Min(1)]
-        public int enemyCount = 5;
-
-        [Min(0.01f)]
-        public float spawnInterval = 0.5f;
+        [Min(1)] public int enemyCount = 5;
+        [Min(0.01f)] public float spawnInterval = 0.5f;
     }
 
     [Header("Enemy Waves")]
@@ -24,30 +21,58 @@ public class WaveSpawner : MonoBehaviour
     [Header("Boss")]
     [SerializeField] private Boss bossPrefab;
     [SerializeField] private Transform bossSpawnPoint;
-    
+
+    [Header("Stage 2")]
+    [SerializeField] private Wave[] stageTwoWaves;
+    [SerializeField] private Boss stageTwoBossPrefab;
 
     private readonly List<Enemy> aliveEnemies = new List<Enemy>();
 
-    private bool bossSpawned;
-
     private IEnumerator Start()
     {
-        if (!ValidateSetup())
+        if (bossPrefab == null || bossSpawnPoint == null)
+        {
+            Debug.LogError("WaveSpawner: ใส่ Boss Prefab และ Boss Spawn Point", this);
+            yield break;
+        }
+
+        if (!ValidateWaves(waves))
             yield break;
 
-        for (int waveIndex = 0; waveIndex < waves.Length; waveIndex++)
+        yield return RunWaves(waves);
+
+        Boss stageOneBoss = SpawnBoss(bossPrefab);
+
+        if (stageTwoWaves == null || stageTwoWaves.Length == 0)
+            yield break;
+
+        if (!ValidateWaves(stageTwoWaves))
+            yield break;
+
+        if (!TryGetComponent<LevelManager>(out var levelManager))
+            levelManager = gameObject.AddComponent<LevelManager>();
+
+        yield return levelManager.WaitForStageOneClear(stageOneBoss);
+        yield return RunWaves(stageTwoWaves);
+
+        if (stageTwoBossPrefab != null)
+            SpawnBoss(stageTwoBossPrefab);
+    }
+
+    private IEnumerator RunWaves(Wave[] stageWaves)
+    {
+        if (stageWaves == null)
+            yield break;
+
+        for (int waveIndex = 0; waveIndex < stageWaves.Length; waveIndex++)
         {
-            Wave wave = waves[waveIndex];
+            Wave wave = stageWaves[waveIndex];
 
             yield return new WaitForSeconds(timeBetweenWaves);
-
-            Debug.Log("Wave " + (waveIndex + 1));
+            Debug.Log("Wave " + (waveIndex + 1), this);
 
             for (int i = 0; i < wave.enemyCount; i++)
             {
-                if (bossSpawned)
-                    yield break;
-
                 Enemy prefab = wave.enemyPrefabs[
                     Random.Range(0, wave.enemyPrefabs.Length)
                 ];
@@ -56,40 +81,28 @@ public class WaveSpawner : MonoBehaviour
                     Random.Range(0, spawnPoints.Length)
                 ];
 
-                Enemy enemy = Instantiate(
-                    prefab,
-                    point.position,
-                    point.rotation
-                );
-
+                Enemy enemy = Instantiate(prefab, point.position, point.rotation);
                 aliveEnemies.Add(enemy);
 
                 yield return new WaitForSeconds(wave.spawnInterval);
             }
 
-            // รอให้ศัตรูที่สร้างใน Wave นี้ตายหมด
             while (aliveEnemies.Count > 0)
             {
                 aliveEnemies.RemoveAll(
                     enemy => enemy == null || enemy.CurrentHP <= 0
                 );
 
-                yield return null;
+                if (aliveEnemies.Count > 0)
+                    yield return null;
             }
         }
-
-        SpawnBoss();
     }
 
-    private void SpawnBoss()
+    private Boss SpawnBoss(Boss prefab)
     {
-        if (bossSpawned)
-            return;
-
-        bossSpawned = true;
-
         Boss boss = Instantiate(
-            bossPrefab,
+            prefab,
             bossSpawnPoint.position,
             bossSpawnPoint.rotation
         );
@@ -99,18 +112,12 @@ public class WaveSpawner : MonoBehaviour
         if (healthUI != null)
             healthUI.Show(boss);
 
-        Debug.Log("Boss spawned");
+        return boss;
     }
 
-    private bool ValidateSetup()
+    private bool ValidateWaves(Wave[] stageWaves)
     {
-        if (bossPrefab == null || bossSpawnPoint == null)
-        {
-            Debug.LogError("WaveSpawner: ใส่ Boss Prefab และ Boss Spawn Point", this);
-            return false;
-        }
-
-        if (waves == null || waves.Length == 0)
+        if (stageWaves == null || stageWaves.Length == 0)
             return true;
 
         if (spawnPoints == null || spawnPoints.Length == 0)
@@ -128,7 +135,7 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
-        foreach (Wave wave in waves)
+        foreach (Wave wave in stageWaves)
         {
             if (wave == null ||
                 wave.enemyPrefabs == null ||
