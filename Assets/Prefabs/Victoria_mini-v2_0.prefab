@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VictoriaBoss
   bulletCount: 3
   spreadAngle: 40
-  currentHP: 50
+  currentHP: 100
   moveSpeed: 2
   moveDistance: 3
   bulletPrefab: {fileID: 8592482104669203654, guid: 2a022723463163749a0772d16026e05b, type: 3}
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43da95a5c612d414fb4f756787bcab41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RewardScoreSystem
-  scoreReward: 100
+  scoreReward: 1000
 --- !u!70 &3177952212367236058
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -204,8 +204,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 8.23, y: 11.731256}
+  m_Offset: {x: 0.15295267, y: 0}
+  m_Size: {x: 3.8964126, y: 11.7312565}
   m_Direction: 0
 --- !u!1 &7131944672985794200
 GameObject:

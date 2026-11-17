@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21c6e7bd6ce3aa84b832cb519681f782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  damage: 2
+  damage: 10
   isHoldingClick: 0
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
