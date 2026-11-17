@@ -41,6 +41,12 @@ public abstract class Boss : Enemy
         startingHP = Mathf.Max(1, currentHP);
     }
 
+    // VictoriaBoss override เฉพาะทิศเล็งได้ โดยไม่แทนระบบยิงของ Boss
+    protected virtual Vector2 GetShootDirection()
+    {
+        return Vector2.down;
+    }
+
     protected override void Shoot()
     {
         if (isDead || isAttacking)
@@ -97,7 +103,43 @@ public abstract class Boss : Enemy
         int count = IsPhaseTwo ? phaseTwoBulletCount : cooldownBulletCount;
         float spread = IsPhaseTwo ? phaseTwoSpread : cooldownSpread;
 
-        BossAttack.ShootFan(bulletPrefab, firePoint, count, spread);
+        ShootFanInDirection(GetShootDirection(), count, spread);
+    }
+
+    private void ShootFanInDirection(
+        Vector2 centerDirection,
+        int bulletCount,
+        float spreadAngle)
+    {
+        if (bulletPrefab == null || firePoint == null)
+            return;
+
+        centerDirection = centerDirection.normalized;
+        int count = Mathf.Max(1, bulletCount);
+
+        float startAngle = count > 1 ? -spreadAngle * 0.5f : 0f;
+        float angleStep = 0f;
+
+        if (count > 1)
+        {
+            int divisions = spreadAngle >= 360f ? count : count - 1;
+            angleStep = spreadAngle / divisions;
+        }
+
+        for (int i = 0; i < count; i++)
+        {
+            float angle = startAngle + angleStep * i;
+            Vector2 direction =
+                Quaternion.Euler(0f, 0f, angle) * centerDirection;
+
+            EnemyBullet bullet = Instantiate(
+                bulletPrefab,
+                firePoint.position,
+                Quaternion.identity
+            );
+
+            bullet.SetDirection(direction);
+        }
     }
 
     private IEnumerator RunAttack(BossAttack attack)

@@ -39,9 +39,7 @@ public class Bullet : BasicAttack
         if (hasHit)
             return;
 
-        rb.MovePosition(
-            rb.position + direction * speed * Time.fixedDeltaTime
-        );
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -49,13 +47,12 @@ public class Bullet : BasicAttack
         if (hasHit)
             return;
 
-        if (other.TryGetComponent(out SalamanderGuardAttack guard))
+        
+
+        if (other.TryGetComponent(out SalamanderGuardAttack salamanderGuard))
         {
-            if (guard.IsGuarding)
-            {
-                hasHit = true;
-                Destroy(gameObject);
-            }
+            if (salamanderGuard.IsGuarding)
+                RemoveBullet();
 
             return;
         }
@@ -65,8 +62,13 @@ public class Bullet : BasicAttack
         if (enemy == null)
             return;
 
-        hasHit = true;
+        RemoveBullet();
         enemy.TakeDamage(damage);
+    }
+
+    private void RemoveBullet()
+    {
+        hasHit = true;
         Destroy(gameObject);
     }
 }

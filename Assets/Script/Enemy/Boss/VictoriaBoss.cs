@@ -2,29 +2,25 @@ using UnityEngine;
 
 public class VictoriaBoss : Boss
 {
-    [Header("Fire Point Rotation")]
-    [SerializeField] private float phaseOneRotateSpeed = 20f;
-    [SerializeField] private float firePointRotateSpeed = 45f;
+    [SerializeField] private Player player;
 
-    protected override void Update()
+    protected override Vector2 GetShootDirection()
     {
-        if (!isDead && firePoint != null)
-        {
-            float rotationSpeed = IsPhaseTwo
-                ? firePointRotateSpeed
-                : phaseOneRotateSpeed;
+        if (player == null)
+            player = FindFirstObjectByType<Player>();
 
-            firePoint.Rotate(
-                0f,
-                0f,
-                rotationSpeed * Time.deltaTime
-            );
+        if (player == null ||
+            !player.isActiveAndEnabled ||
+            firePoint == null)
+        {
+            return Vector2.down;
         }
 
-        base.Update();
+        return (
+            (Vector2)player.transform.position -
+            (Vector2)firePoint.position
+        ).normalized;
     }
-
-    
 
     protected override void Die()
     {

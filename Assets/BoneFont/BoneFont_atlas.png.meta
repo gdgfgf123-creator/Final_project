@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 6e0758200cb229946a6b7560b129a8f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8464027266696307013
+    second: BoneFont_atlas_0
+  - first:
+      213: -8302061898421631783
+    second: BoneFont_atlas_1
+  - first:
+      213: 8855981201765437941
+    second: BoneFont_atlas_2
+  - first:
+      213: -7018773696306039500
+    second: BoneFont_atlas_3
+  - first:
+      213: 468224767235770212
+    second: BoneFont_atlas_4
+  - first:
+      213: -9101317218850942074
+    second: BoneFont_atlas_5
+  - first:
+      213: 8060060943430702593
+    second: BoneFont_atlas_6
+  - first:
+      213: 2606509217759277538
+    second: BoneFont_atlas_7
+  - first:
+      213: -2174483183081866177
+    second: BoneFont_atlas_8
+  - first:
+      213: 848439341662944316
+    second: BoneFont_atlas_9
+  - first:
+      213: -48082724747132782
+    second: BoneFont_atlas_10
+  - first:
+      213: 8823741054852058793
+    second: BoneFont_atlas_11
+  - first:
+      213: 3090376923351513184
+    second: BoneFont_atlas_12
+  - first:
+      213: 5208031661072797660
+    second: BoneFont_atlas_13
+  - first:
+      213: -4291591342966529337
+    second: BoneFont_atlas_14
+  - first:
+      213: -4206015915679519984
+    second: BoneFont_atlas_15
+  - first:
+      213: 2775573271312143435
+    second: BoneFont_atlas_16
+  - first:
+      213: -4992347979519291331
+    second: BoneFont_atlas_17
+  - first:
+      213: -7708191457343176181
+    second: BoneFont_atlas_18
+  - first:
+      213: -8140194606469737743
+    second: BoneFont_atlas_19
+  - first:
+      213: -7142862816771701183
+    second: BoneFont_atlas_20
+  - first:
+      213: 4099117410322048140
+    second: BoneFont_atlas_21
+  - first:
+      213: 4593468841269393112
+    second: BoneFont_atlas_22
+  - first:
+      213: 8256417442422760029
+    second: BoneFont_atlas_23
+  - first:
+      213: 1964479612229094892
+    second: BoneFont_atlas_24
+  - first:
+      213: -6283583301921272956
+    second: BoneFont_atlas_25
+  - first:
+      213: -7600034133962947210
+    second: BoneFont_atlas_26
+  - first:
+      213: -4120842286451306000
+    second: BoneFont_atlas_27
+  - first:
+      213: -4754487404762195900
+    second: BoneFont_atlas_28
+  - first:
+      213: 1178848928478421801
+    second: BoneFont_atlas_29
+  - first:
+      213: 7566889975108448027
+    second: BoneFont_atlas_30
+  - first:
+      213: -8074921337841511517
+    second: BoneFont_atlas_31
+  - first:
+      213: 250398546387109091
+    second: BoneFont_atlas_32
+  - first:
+      213: 7453973376246880372
+    second: BoneFont_atlas_33
+  - first:
+      213: 3996031538622097802
+    second: BoneFont_atlas_34
+  - first:
+      213: -211502438410657787
+    second: BoneFont_atlas_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoneFont_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1739
+        width: 299
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54167a864f3467570800000000000000
+      internalID: 8464027266696307013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1739
+        width: 258
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4064980b629cc80800000000000000
+      internalID: -8302061898421631783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1737
+        width: 244
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f114c46bf3c6ea70800000000000000
+      internalID: 8855981201765437941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1741
+        width: 263
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435b2d0a28e489e90800000000000000
+      internalID: -7018773696306039500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1739
+        width: 228
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467c02ee1f77f7600800000000000000
+      internalID: 468224767235770212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1739
+        width: 225
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6835e36d530a1b180800000000000000
+      internalID: -9101317218850942074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1394
+        width: 266
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106df2959b61bdf60800000000000000
+      internalID: 8060060943430702593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1397
+        width: 255
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1b25cd25e2c2420800000000000000
+      internalID: 2606509217759277538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1397
+        width: 138
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c385ed01fa2d1e0800000000000000
+      internalID: -2174483183081866177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1394
+        width: 236
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c3945061346cb00800000000000000
+      internalID: 848439341662944316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1391
+        width: 268
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2904d9f340d255ff0800000000000000
+      internalID: -48082724747132782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1395
+        width: 228
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aecc7c3db9347a70800000000000000
+      internalID: 8823741054852058793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1052
+        width: 314
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0687e62307933ea20800000000000000
+      internalID: 3090376923351513184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1050
+        width: 294
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf4b31d335a64840800000000000000
+      internalID: 5208031661072797660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1047
+        width: 294
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2a65159643174c0800000000000000
+      internalID: -4291591342966529337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1048
+        width: 249
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b68422fca31a5c0800000000000000
+      internalID: -4206015915679519984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1042
+        width: 297
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4411a44f21d48620800000000000000
+      internalID: 2775573271312143435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1046
+        width: 255
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d301d9596fd97bab0800000000000000
+      internalID: -4992347979519291331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 703
+        width: 248
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b020c5495b0070590800000000000000
+      internalID: -7708191457343176181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 708
+        width: 282
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f212de4228380f80800000000000000
+      internalID: -8140194606469737743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 707
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1460af6dc147fdc90800000000000000
+      internalID: -7142862816771701183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 709
+        width: 292
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c846dde019df2e830800000000000000
+      internalID: 4099117410322048140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 709
+        width: 338
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6ffaae2974fbf30800000000000000
+      internalID: 4593468841269393112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 702
+        width: 286
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52a2f46befa49270800000000000000
+      internalID: 8256417442422760029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 363
+        width: 282
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced896f8ccb334b10800000000000000
+      internalID: 1964479612229094892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 368
+        width: 254
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b086c574a3cc8a0800000000000000
+      internalID: -6283583301921272956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 362
+        width: 263
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6758b4cc831478690800000000000000
+      internalID: -7600034133962947210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 368
+        width: 178
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f159ac06c3dfc6c0800000000000000
+      internalID: -4120842286451306000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 367
+        width: 231
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448941e45eaa40eb0800000000000000
+      internalID: -4754487404762195900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 362
+        width: 233
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9236ec9cadc1c5010800000000000000
+      internalID: 1178848928478421801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 27
+        width: 249
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fadcc575ef20960800000000000000
+      internalID: 7566889975108448027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 22
+        width: 233
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a31cb473dd10ff80800000000000000
+      internalID: -8074921337841511517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 18
+        width: 243
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e48da9b628997300800000000000000
+      internalID: 250398546387109091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 26
+        width: 237
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4781a68fa45d17760800000000000000
+      internalID: 7453973376246880372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 18
+        width: 251
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89e3d23381c47730800000000000000
+      internalID: 3996031538622097802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneFont_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 19
+        width: 244
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500676127a7901df0800000000000000
+      internalID: -211502438410657787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoneFont_atlas_0: 8464027266696307013
+      BoneFont_atlas_1: -8302061898421631783
+      BoneFont_atlas_10: -48082724747132782
+      BoneFont_atlas_11: 8823741054852058793
+      BoneFont_atlas_12: 3090376923351513184
+      BoneFont_atlas_13: 5208031661072797660
+      BoneFont_atlas_14: -4291591342966529337
+      BoneFont_atlas_15: -4206015915679519984
+      BoneFont_atlas_16: 2775573271312143435
+      BoneFont_atlas_17: -4992347979519291331
+      BoneFont_atlas_18: -7708191457343176181
+      BoneFont_atlas_19: -8140194606469737743
+      BoneFont_atlas_2: 8855981201765437941
+      BoneFont_atlas_20: -7142862816771701183
+      BoneFont_atlas_21: 4099117410322048140
+      BoneFont_atlas_22: 4593468841269393112
+      BoneFont_atlas_23: 8256417442422760029
+      BoneFont_atlas_24: 1964479612229094892
+      BoneFont_atlas_25: -6283583301921272956
+      BoneFont_atlas_26: -7600034133962947210
+      BoneFont_atlas_27: -4120842286451306000
+      BoneFont_atlas_28: -4754487404762195900
+      BoneFont_atlas_29: 1178848928478421801
+      BoneFont_atlas_3: -7018773696306039500
+      BoneFont_atlas_30: 7566889975108448027
+      BoneFont_atlas_31: -8074921337841511517
+      BoneFont_atlas_32: 250398546387109091
+      BoneFont_atlas_33: 7453973376246880372
+      BoneFont_atlas_34: 3996031538622097802
+      BoneFont_atlas_35: -211502438410657787
+      BoneFont_atlas_4: 468224767235770212
+      BoneFont_atlas_5: -9101317218850942074
+      BoneFont_atlas_6: 8060060943430702593
+      BoneFont_atlas_7: 2606509217759277538
+      BoneFont_atlas_8: -2174483183081866177
+      BoneFont_atlas_9: 848439341662944316
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
