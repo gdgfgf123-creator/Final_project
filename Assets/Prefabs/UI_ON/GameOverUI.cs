@@ -1,11 +1,12 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TMP_Text finalScoreText;
+    [SerializeField] private Text finalScoreText;
+    [SerializeField] private string mainMenuSceneName = "Main menu";
 
     private void Awake()
     {
@@ -29,7 +30,6 @@ public class GameOverUI : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    [SerializeField] private string mainMenuSceneName = "Main menu";
 
     public void BackToMainMenu()
     {
