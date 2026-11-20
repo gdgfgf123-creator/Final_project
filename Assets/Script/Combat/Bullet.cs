@@ -47,9 +47,10 @@ public class Bullet : BasicAttack
         if (hasHit)
             return;
 
-        
+        SalamanderGuardAttack salamanderGuard =
+            other.GetComponentInParent<SalamanderGuardAttack>();
 
-        if (other.TryGetComponent(out SalamanderGuardAttack salamanderGuard))
+        if (salamanderGuard != null)
         {
             if (salamanderGuard.IsGuarding)
                 RemoveBullet();

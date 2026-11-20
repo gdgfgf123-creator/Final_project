@@ -33,11 +33,16 @@ public class EnemyBullet : MonoBehaviour
 
         direction = shootDirection.normalized;
 
-        if (directionVisual == null)
-            return;
-
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        directionVisual.rotation = Quaternion.Euler(0f, 0f, angle + spriteAngleOffset);
+        if (directionVisual != null)
+        {
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            directionVisual.rotation =
+                Quaternion.Euler(0f, 0f, angle + spriteAngleOffset);
+        }
+        else if (TryGetComponent(out ProjectileFaceDirection faceDirection))
+        {
+            faceDirection.SetDirection(direction);
+        }
     }
 
     protected virtual void FixedUpdate()

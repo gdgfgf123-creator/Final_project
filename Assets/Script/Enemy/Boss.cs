@@ -41,7 +41,7 @@ public abstract class Boss : Enemy
         startingHP = Mathf.Max(1, currentHP);
     }
 
-    // VictoriaBoss override เฉพาะทิศเล็งได้ โดยไม่แทนระบบยิงของ Boss
+    // VictoriaBoss สามารถ override ทิศยิงได้
     protected virtual Vector2 GetShootDirection()
     {
         return Vector2.down;
@@ -49,9 +49,10 @@ public abstract class Boss : Enemy
 
     protected override void Shoot()
     {
-        if (isDead || isAttacking)
+        if (isDead)
             return;
 
+        
         if (!enableBossSkills || Time.time < nextSkillTime)
         {
             ShootRegularVolley();
