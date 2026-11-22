@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 8307401785798873781}
   m_Layer: 0
   m_Name: Datura
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,6 +531,7 @@ MonoBehaviour:
   phaseTwoBulletCount: 5
   phaseTwoSpread: 100
   contactDamage: 1
+  encounterDialogue: {fileID: 0}
   player: {fileID: 0}
   bodyVisual: {fileID: 388978079315853812}
   phaseTwoSprite: {fileID: -6165787535405528615, guid: eff7e0b92a9aad04298d45262ea3ada5, type: 3}

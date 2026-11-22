@@ -5,6 +5,7 @@ public abstract class Boss : Enemy
 {
     [SerializeField] private bool enableBossSkills = false;
 
+
     [Header("Phase 1 Skills")]
     [SerializeField] private BossAttack[] attackPatterns;
 
@@ -28,8 +29,12 @@ public abstract class Boss : Enemy
     [Header("Contact Damage")]
     [SerializeField, Min(1)] private int contactDamage = 1;
 
+    [Header("Encounter Dialogue")]
+    [SerializeField] private VisualNovelDialogue encounterDialogue;
+
     private int startingHP;
     private bool isAttacking;
+    private bool hasShownEncounterDialogue;
     private float nextSkillTime;
 
     protected bool IsPhaseTwo =>
@@ -41,7 +46,24 @@ public abstract class Boss : Enemy
         startingHP = Mathf.Max(1, currentHP);
     }
 
-    // VictoriaBoss สามารถ override ทิศยิงได้
+    private void Start()
+    {
+        if (hasShownEncounterDialogue)
+            return;
+
+        if (encounterDialogue == null)
+            encounterDialogue = FindFirstObjectByType<VisualNovelDialogue>();
+
+        if (encounterDialogue == null)
+        {
+            Debug.LogWarning("VisualNovelDialogue was not found in the scene.", this);
+            return;
+        }
+
+        hasShownEncounterDialogue = true;
+        encounterDialogue.PlayStory(this);
+    }
+
     protected virtual Vector2 GetShootDirection()
     {
         return Vector2.down;
@@ -52,7 +74,6 @@ public abstract class Boss : Enemy
         if (isDead)
             return;
 
-        
         if (!enableBossSkills || Time.time < nextSkillTime)
         {
             ShootRegularVolley();

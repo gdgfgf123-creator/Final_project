@@ -3,10 +3,7 @@ using UnityEngine;
 
 public class BossChoiceDialogue : Dialogue
 {
-    [SerializeField]
-    private List<BossChoice> choices =
-        new List<BossChoice>();
-
+    [SerializeField] private List<BossChoice> choices = new List<BossChoice>();
     [SerializeField] private int triggerHPThreshold;
 
     public override void ShowDialogue()
@@ -21,21 +18,26 @@ public class BossChoiceDialogue : Dialogue
 
     public void StartDialogue()
     {
+        ShowDialogue();
     }
 
     public void PauseBossCombat()
     {
+        Time.timeScale = 0f;
     }
 
     public void ShowChoices()
     {
+        // เชื่อมปุ่มตัวเลือกตรงนี้เมื่อสร้าง UI ตัวเลือกบอส
     }
 
     public void ResolveChoice()
     {
+        // จัดการตัวเลือกที่ผู้เล่นเลือกตรงนี้
     }
 
     public void ShowVictoryDialogue()
     {
+        ShowDialogue();
     }
 }

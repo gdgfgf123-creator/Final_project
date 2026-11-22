@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,19 +16,12 @@ public class VisualNovelDialogue : Dialogue
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text characterNameText;
-    [SerializeField] private TMP_Text dialogueBodyText;
+    [SerializeField] private Text characterNameText; // Text (Legacy)
+    [SerializeField] private Text dialogueBodyText;  // Text (Legacy)
     [SerializeField] private Button nextButton;
 
-    [Header("Lines")]
-    [SerializeField] private List<DialogueLine> lines = new List<DialogueLine>
-    {
-        new DialogueLine
-        {
-            characterName = "DATURA",
-            text = "Tonight, your blood will be mine."
-        }
-    };
+    [Header("Dialogue Lines")]
+    [SerializeField] private List<DialogueLine> lines = new List<DialogueLine>();
 
     private int currentLineIndex;
     private float previousTimeScale = 1f;
@@ -42,6 +34,8 @@ public class VisualNovelDialogue : Dialogue
 
         if (nextButton != null)
             nextButton.onClick.AddListener(NextLine);
+        else
+            Debug.LogError("ยังไม่ได้ใส่ Next Button ใน Inspector", this);
     }
 
     public override void ShowDialogue()
@@ -61,21 +55,30 @@ public class VisualNovelDialogue : Dialogue
 
         Time.timeScale = previousTimeScale;
     }
+    private string currentBossName = "Boss";
 
+    public void PlayStory(Boss boss)
+    {
+        if (boss != null)
+            currentBossName = boss.GetType().Name;
+
+        PlayStory();
+    }
     public void PlayStory()
     {
+
         if (lines == null || lines.Count == 0)
         {
-            Debug.LogWarning("VisualNovelDialogue has no dialogue lines.", this);
+            Debug.LogWarning("ยังไม่มี Dialogue Lines", this);
             return;
         }
 
-        if (dialoguePanel == null || characterNameText == null || dialogueBodyText == null)
+        if (dialoguePanel == null ||
+            characterNameText == null ||
+            dialogueBodyText == null ||
+            nextButton == null)
         {
-            Debug.LogError(
-                "Assign Dialogue Panel, Character Name Text, and Dialogue Body Text in the Inspector.",
-                this
-            );
+            Debug.LogError("กรุณาใส่ Dialogue Panel, Name Text, Body Text และ Next Button ใน Inspector", this);
             return;
         }
 
@@ -88,7 +91,7 @@ public class VisualNovelDialogue : Dialogue
         isOpen = true;
         currentLineIndex = 0;
         dialoguePanel.SetActive(true);
-        DisplayCurrentLine();
+        ShowCurrentLine();
     }
 
     public void NextLine()
@@ -104,14 +107,17 @@ public class VisualNovelDialogue : Dialogue
             return;
         }
 
-        DisplayCurrentLine();
+        ShowCurrentLine();
     }
 
-    private void DisplayCurrentLine()
+    private void ShowCurrentLine()
     {
         DialogueLine line = lines[currentLineIndex];
 
-        characterNameText.text = line.characterName;
+        characterNameText.text = line.characterName == "{BOSS}"
+            ? currentBossName
+            : line.characterName;
+
         dialogueBodyText.text = line.text;
     }
 
