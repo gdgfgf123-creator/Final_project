@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class PowerUnlock : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Power[] powers;
+
+    private void Update()
     {
-        
+        CheckPowers();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CheckPowers()
     {
-        
+        if (ScoreTracker.Instance == null)
+            return;
+
+        int score = ScoreTracker.Instance.Score;
+
+        foreach (Power power in powers)
+        {
+            if (power != null)
+                power.CheckUnlock(score);
+        }
     }
 }

@@ -15,27 +15,24 @@ public class VisualNovelDialogue : Dialogue
     }
 
     [Header("Dialogue UI")]
-    [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private Text characterNameText; // Text (Legacy)
-    [SerializeField] private Text dialogueBodyText;  // Text (Legacy)
+    [SerializeField] private Text characterNameText;
+    [SerializeField] private Text dialogueBodyText;
     [SerializeField] private Button nextButton;
 
     [Header("Dialogue Lines")]
     [SerializeField] private List<DialogueLine> lines = new List<DialogueLine>();
 
     private int currentLineIndex;
-    private float previousTimeScale = 1f;
-    private bool isOpen;
+    private string currentBossName = "Boss";
 
-    private void Awake()
+    protected override void Awake()
     {
-        if (dialoguePanel != null)
-            dialoguePanel.SetActive(false);
+        base.Awake();
 
         if (nextButton != null)
             nextButton.onClick.AddListener(NextLine);
         else
-            Debug.LogError("ยังไม่ได้ใส่ Next Button ใน Inspector", this);
+            Debug.LogError("ยังไม่ได้ใส่ Next Button", this);
     }
 
     public override void ShowDialogue()
@@ -45,17 +42,8 @@ public class VisualNovelDialogue : Dialogue
 
     public override void CloseDialogue()
     {
-        if (!isOpen)
-            return;
-
-        isOpen = false;
-
-        if (dialoguePanel != null)
-            dialoguePanel.SetActive(false);
-
-        Time.timeScale = previousTimeScale;
+        base.CloseDialogue();
     }
-    private string currentBossName = "Boss";
 
     public void PlayStory(Boss boss)
     {
@@ -64,8 +52,11 @@ public class VisualNovelDialogue : Dialogue
 
         PlayStory();
     }
+
     public void PlayStory()
     {
+        if (IsOpen)
+            return;
 
         if (lines == null || lines.Count == 0)
         {
@@ -78,25 +69,20 @@ public class VisualNovelDialogue : Dialogue
             dialogueBodyText == null ||
             nextButton == null)
         {
-            Debug.LogError("กรุณาใส่ Dialogue Panel, Name Text, Body Text และ Next Button ใน Inspector", this);
+            Debug.LogError("กรุณาใส่ Dialogue UI ให้ครบ", this);
             return;
         }
 
-        if (!isOpen)
-        {
-            previousTimeScale = Time.timeScale;
-            Time.timeScale = 0f;
-        }
-
-        isOpen = true;
         currentLineIndex = 0;
-        dialoguePanel.SetActive(true);
+
+        base.ShowDialogue();
+
         ShowCurrentLine();
     }
 
     public void NextLine()
     {
-        if (!isOpen)
+        if (!IsOpen)
             return;
 
         currentLineIndex++;
@@ -121,12 +107,11 @@ public class VisualNovelDialogue : Dialogue
         dialogueBodyText.text = line.text;
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
         if (nextButton != null)
             nextButton.onClick.RemoveListener(NextLine);
 
-        if (isOpen)
-            Time.timeScale = previousTimeScale;
+        base.OnDestroy();
     }
 }

@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43da95a5c612d414fb4f756787bcab41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RewardScoreSystem
-  scoreReward: 75
+  scoreReward: 150
 --- !u!1 &4816576413520428956
 GameObject:
   m_ObjectHideFlags: 0
