@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,8 +16,8 @@ public class VisualNovelDialogue : Dialogue
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text characterNameText;
-    [SerializeField] private TMP_Text dialogueBodyText;
+    [SerializeField] private Text characterNameText;
+    [SerializeField] private Text dialogueBodyText;
     [SerializeField] private Button nextButton;
 
     [Header("Lines")]
@@ -27,7 +26,7 @@ public class VisualNovelDialogue : Dialogue
         new DialogueLine
         {
             characterName = "DATURA",
-            text = "Tonight, your blood will be mine."
+            text = "คืนนี้ เลือดของเจ้าจะเป็นของข้า"
         }
     };
 
