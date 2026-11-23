@@ -14,8 +14,26 @@ public class VisualNovelDialogue : Dialogue
         [TextArea(3, 10)]
         public string text;
 
+        public bool showPlayer = true;
+        public bool showCharacter = true;
         public bool isPlayerSpeaking;
         public Sprite characterPortrait;
+    }
+
+    [Serializable]
+    public class BossDialogueData
+    {
+        public string bossClassName;
+        public string bossDisplayName;
+        public Sprite bossPortrait;
+
+        [Header("Before Battle")]
+        public List<DialogueLine> dialogueLines =
+            new List<DialogueLine>();
+
+        [Header("After Battle")]
+        public List<DialogueLine> victoryDialogueLines =
+            new List<DialogueLine>();
     }
 
     [Header("Dialogue UI")]
@@ -37,8 +55,15 @@ public class VisualNovelDialogue : Dialogue
     private List<DialogueLine> lines =
         new List<DialogueLine>();
 
+    [Header("Boss Dialogues")]
+    [SerializeField]
+    private List<BossDialogueData> bossDialogues =
+        new List<BossDialogueData>();
+
+    private List<DialogueLine> activeLines;
     private int currentLineIndex;
     private string currentBossName = "Boss";
+    private Sprite currentBossPortrait;
 
     public bool IsPlaying => IsOpen;
 
@@ -55,28 +80,51 @@ public class VisualNovelDialogue : Dialogue
         PlayStory();
     }
 
-    public override void CloseDialogue()
-    {
-        base.CloseDialogue();
-    }
-
-    public void PlayStory(Boss boss)
-    {
-        if (IsOpen)
-            return;
-
-        if (boss != null)
-            currentBossName = boss.GetType().Name;
-
-        PlayStory();
-    }
-
     public void PlayStory()
     {
         if (IsOpen)
             return;
 
-        if (lines == null || lines.Count == 0)
+        currentBossName = "Boss";
+        currentBossPortrait = null;
+
+        BeginDialogue(lines);
+    }
+
+    public void PlayStory(Boss boss)
+    {
+        if (IsOpen || boss == null)
+            return;
+
+        string bossType = boss.GetType().Name;
+
+        BossDialogueData data = bossDialogues.Find(
+            item => item != null &&
+            item.bossClassName == bossType
+        );
+
+        if (data == null)
+        {
+            Debug.LogWarning(
+                "ไม่พบ Dialogue ของ " + bossType,
+                this
+            );
+
+            return;
+        }
+
+        currentBossName = string.IsNullOrEmpty(data.bossDisplayName)
+            ? bossType
+            : data.bossDisplayName;
+
+        currentBossPortrait = data.bossPortrait;
+
+        BeginDialogue(data.dialogueLines);
+    }
+
+    private void BeginDialogue(List<DialogueLine> selectedLines)
+    {
+        if (selectedLines == null || selectedLines.Count == 0)
             return;
 
         if (dialoguePanel == null ||
@@ -88,32 +136,34 @@ public class VisualNovelDialogue : Dialogue
             return;
         }
 
+        activeLines = selectedLines;
         currentLineIndex = 0;
 
         if (playerImage != null)
         {
             playerImage.sprite = playerPortrait;
-            playerImage.enabled = playerPortrait != null;
+            playerImage.enabled = false;
         }
 
         if (characterImage != null)
         {
-            characterImage.sprite = null;
+            characterImage.sprite = currentBossPortrait;
             characterImage.enabled = false;
         }
 
         base.ShowDialogue();
+
         ShowCurrentLine();
     }
 
     public void NextLine()
     {
-        if (!IsOpen)
+        if (!IsOpen || activeLines == null)
             return;
 
         currentLineIndex++;
 
-        if (currentLineIndex >= lines.Count)
+        if (currentLineIndex >= activeLines.Count)
         {
             CloseDialogue();
             return;
@@ -124,11 +174,12 @@ public class VisualNovelDialogue : Dialogue
 
     private void ShowCurrentLine()
     {
-        DialogueLine line = lines[currentLineIndex];
+        DialogueLine line = activeLines[currentLineIndex];
 
-        characterNameText.text = line.characterName == "{BOSS}"
-            ? currentBossName
-            : line.characterName;
+        characterNameText.text =
+            line.characterName == "{BOSS}"
+                ? currentBossName
+                : line.characterName;
 
         dialogueBodyText.text = line.text;
 
@@ -137,23 +188,49 @@ public class VisualNovelDialogue : Dialogue
 
     private void UpdatePortraits(DialogueLine line)
     {
+        string speaker = line.characterName?.Trim();
+
+        bool isZom =
+            line.isPlayerSpeaking ||
+            string.Equals(
+                speaker, "Zom",
+                StringComparison.OrdinalIgnoreCase
+            ) ||
+            speaker == "ซอม";
+
         if (playerImage != null)
         {
-            playerImage.color = line.isPlayerSpeaking
+            playerImage.sprite = playerPortrait;
+
+            playerImage.enabled =
+                line.showPlayer && playerPortrait != null;
+
+            playerImage.color = isZom
                 ? Color.white
                 : GetInactiveColor();
         }
 
         if (characterImage != null)
         {
-            if (!line.isPlayerSpeaking &&
-                line.characterPortrait != null)
+            if (!isZom)
             {
-                characterImage.sprite = line.characterPortrait;
-                characterImage.enabled = true;
+                if (line.characterPortrait != null)
+                {
+                    characterImage.sprite =
+                        line.characterPortrait;
+                }
+                else if (speaker == "{BOSS}")
+                {
+                    characterImage.sprite =
+                        currentBossPortrait;
+                }
             }
 
-            characterImage.color = line.isPlayerSpeaking
+            characterImage.enabled =
+                line.showCharacter &&
+                characterImage.sprite != null;
+
+            characterImage.color = isZom
                 ? GetInactiveColor()
                 : Color.white;
         }
@@ -169,11 +246,40 @@ public class VisualNovelDialogue : Dialogue
         );
     }
 
+    public override void CloseDialogue()
+    {
+        base.CloseDialogue();
+        activeLines = null;
+    }
+
     protected override void OnDestroy()
     {
         if (nextButton != null)
             nextButton.onClick.RemoveListener(NextLine);
 
         base.OnDestroy();
+    }
+    public void PlayVictoryStory(Boss boss)
+    {
+        if (IsOpen || boss == null)
+            return;
+
+        string bossType = boss.GetType().Name;
+
+        BossDialogueData data = bossDialogues.Find(
+            item => item != null &&
+            item.bossClassName == bossType
+        );
+
+        if (data == null)
+            return;
+
+        currentBossName = string.IsNullOrEmpty(data.bossDisplayName)
+            ? bossType
+            : data.bossDisplayName;
+
+        currentBossPortrait = data.bossPortrait;
+
+        BeginDialogue(data.victoryDialogueLines);
     }
 }

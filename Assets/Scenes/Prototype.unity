@@ -228,6 +228,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &47726927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47726928}
+  - component: {fileID: 47726930}
+  - component: {fileID: 47726929}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &47726928
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47726927}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.080000006, y: 0.08, z: 0.080000006}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 2118189021}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000045776367, y: -12.899962}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &47726929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47726927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 625105fa5e0a2b241a74bc939994ea53, type: 2}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Skip
+--- !u!222 &47726930
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47726927}
+  m_CullTransparentMesh: 1
 --- !u!1 &102408024
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,16 +374,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102408024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.003, y: 0.0030000003, z: 0.003}
+  m_LocalScale: {x: 0.003, y: 0.0030000007, z: 0.003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1942125264}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -0.97}
+  m_AnchoredPosition: {x: -3, y: -0.9700001}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &121542195
@@ -1165,6 +1244,127 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &315466641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 315466642}
+  - component: {fileID: 315466645}
+  - component: {fileID: 315466644}
+  - component: {fileID: 315466643}
+  m_Layer: 5
+  m_Name: Button (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &315466642
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315466641}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.041389998, y: 0.04139, z: 0.041389998}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 747174157}
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 12.346407, y: -11.509402}
+  m_SizeDelta: {x: 160, y: 26.2213}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &315466643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315466641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 315466644}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &315466644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315466641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -9215901944522325181, guid: fb1fed1a459bcff4fa46469c2de8504a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &315466645
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315466641}
+  m_CullTransparentMesh: 1
 --- !u!1 &324638234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2909,7 +3109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &739695768
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2917,20 +3117,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739695767}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.97}
+  m_LocalScale: {x: 2.0695, y: 1.966025, z: 2.0695}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1157557987}
   - {fileID: 2069903652}
   - {fileID: 1673520137}
-  m_Father: {fileID: 1908791338}
+  - {fileID: 1702773444}
+  m_Father: {fileID: 1071212755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -3.2132}
-  m_SizeDelta: {x: 0, y: -6.4264}
+  m_AnchoredPosition: {x: 0.8324704, y: -6.0754776}
+  m_SizeDelta: {x: 16.0537, y: 3.9969997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739695769
 MonoBehaviour:
@@ -3077,6 +3277,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &747174156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747174157}
+  - component: {fileID: 747174159}
+  - component: {fileID: 747174158}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &747174157
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747174156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 315466642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -12.9}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &747174158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747174156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 625105fa5e0a2b241a74bc939994ea53, type: 2}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: next
+--- !u!222 &747174159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747174156}
+  m_CullTransparentMesh: 1
 --- !u!1 &752166156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,14 +3601,14 @@ RectTransform:
   m_GameObject: {fileID: 812261556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.003, y: 0.0030000003, z: 0.003}
+  m_LocalScale: {x: 0.003, y: 0.0030000007, z: 0.003}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1942125264}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.28, y: 1.24}
+  m_AnchoredPosition: {x: -3.28, y: 1.2400001}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812261558
@@ -4785,17 +5064,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VisualNovelDialogue
   dialoguePanel: {fileID: 739695767}
   characterNameText: {fileID: 2069903654}
-  dialogueBodyText: {fileID: 1157557989}
+  dialogueBodyText: {fileID: 1702773445}
   nextButton: {fileID: 1673520134}
+  playerImage: {fileID: 1869784360}
+  characterImage: {fileID: 2025208406}
+  playerPortrait: {fileID: -8448783385617640126, guid: c21f82e3a14e9da4c851b802abc1e66d, type: 3}
+  inactiveBrightness: 0.5
   lines:
   - characterName: '{BOSS}'
     text: 67 67 67 67 67
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
   - characterName: player
     text: Nooooooooooooooooo
-  - characterName: Zom
-    text: Nooooooooooooooooo
-  - characterName: Zom
-    text: Nooooooooooooooooo
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
 --- !u!4 &1071212755
 Transform:
   m_ObjectHideFlags: 0
@@ -4804,12 +5091,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071212753}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.83247, y: -2.20369, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.86167, y: -2.2784107, z: 0.97}
+  m_LocalScale: {x: 1, y: 1.0526316, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 739695768}
+  m_Father: {fileID: 1908791338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072178093
 GameObject:
@@ -4858,6 +5146,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CourtyardSway
   amplitude: 2
   speed: 1
+--- !u!1 &1085488576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085488577}
+  - component: {fileID: 1085488580}
+  - component: {fileID: 1085488579}
+  m_Layer: 5
+  m_Name: Opening Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1085488577
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085488576}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0695, y: 2.0695, z: 2.0695}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.029201508, y: -8.6121025}
+  m_SizeDelta: {x: -83.9463, y: -96.003}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1085488579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085488576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7516342049021962738, guid: ae7ce2cfed153d84db082a5acbd7a749, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1085488580
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085488576}
+  m_CullTransparentMesh: 1
 --- !u!1 &1109104568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5286,85 +5649,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1 &1157557986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1157557987}
-  - component: {fileID: 1157557988}
-  - component: {fileID: 1157557989}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1157557987
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157557986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 739695768}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.38, y: 0.05}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1157557988
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157557986}
-  m_CullTransparentMesh: 1
---- !u!114 &1157557989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157557986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 625105fa5e0a2b241a74bc939994ea53, type: 2}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
 --- !u!1 &1182512145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6006,6 +6290,85 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1390369470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390369471}
+  - component: {fileID: 1390369473}
+  - component: {fileID: 1390369472}
+  m_Layer: 5
+  m_Name: Character Name (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1390369471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390369470}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0051737498, y: 0.00517375, z: 0.0051737498}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -15.281416, y: -6.708162}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1390369472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390369470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 625105fa5e0a2b241a74bc939994ea53, type: 2}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Name
+--- !u!222 &1390369473
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390369470}
+  m_CullTransparentMesh: 1
 --- !u!1 &1417598551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,6 +6483,705 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7647950403178164297, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
   m_PrefabInstance: {fileID: 1135462554}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1424838555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424838556}
+  - component: {fileID: 1424838557}
+  m_Layer: 5
+  m_Name: OpeningDialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1424838556
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424838555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1908791338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1424838557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424838555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c216f11bfca3184281dd808fb726074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpeningDialogue
+  dialoguePanel: {fileID: 1460556261}
+  characterNameText: {fileID: 1390369472}
+  dialogueBodyText: {fileID: 1815218134}
+  nextButton: {fileID: 315466643}
+  playerImage: {fileID: 1869784360}
+  characterImage: {fileID: 2025208406}
+  playerPortrait: {fileID: -8448783385617640126, guid: c21f82e3a14e9da4c851b802abc1e66d, type: 3}
+  inactiveBrightness: 0.5
+  lines:
+  - characterName: Narrator
+    text: "\u0E22\u0E32\u0E21\u0E23\u0E32\u0E15\u0E23\u0E35 \u0E41\u0E2A\u0E07\u0E08\u0E31\u0E19\u0E17\u0E23\u0E32\u0E2A\u0E35\u0E02\u0E32\u0E27\u0E19\u0E27\u0E25\n\u0E2A\u0E48\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E22\u0E40\u0E08\u0E34\u0E14\u0E08\u0E49\u0E32\u0E44\u0E1B\u0E17\u0E31\u0E48\u0E27\u0E2D\u0E32\u0E13\u0E32\u0E1A\u0E23\u0E34\u0E40\u0E27\u0E13"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E1C\u0E34\u0E14\u0E01\u0E31\u0E1A\u0E01\u0E25\u0E34\u0E48\u0E19\u0E02\u0E2D\u0E07\u0E0B\u0E32\u0E01\u0E28\u0E1E\u0E17\u0E35\u0E48\u0E25\u0E2D\u0E22\u0E1F\u0E38\u0E49\u0E07\u0E44\u0E1B\u0E43\u0E19\u0E2D\u0E32\u0E01\u0E32\u0E28\n\u0E17\u0E33\u0E40\u0E2D\u0E32\u0E44\u0E21\u0E48\u0E19\u0E48\u0E32\u0E2D\u0E20\u0E34\u0E23\u0E21\u0E22\u0E4C\u0E40\u0E2A\u0E35\u0E22\u0E19\u0E35\u0E48\u0E01\u0E23\u0E30\u0E44\u0E23"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48\u0E41\u0E2B\u0E48\u0E07\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D
+      \u0E21\u0E2B\u0E32\u0E2A\u0E38\u0E2A\u0E32\u0E19\n\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14\u0E17\u0E49\u0E32\u0E22\u0E17\u0E35\u0E48\u0E04\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E08\u0E30\u0E44\u0E14\u0E49\u0E2B\u0E25\u0E31\u0E1A\u0E43\u0E2B\u0E25"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E1E\u0E27\u0E01\u0E40\u0E02\u0E32\u0E08\u0E30\u0E15\u0E37\u0E48\u0E19\u0E02\u0E36\u0E49\u0E19\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\n\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E20\u0E39\u0E15\u0E1C\u0E35\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2D\u0E32\u0E28\u0E31\u0E22\u0E43\u0E19\u0E41\u0E14\u0E19\u0E04\u0E19\u0E15\u0E32\u0E22\u0E44\u0E1B\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E25"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E20\u0E39\u0E15\u0E1C\u0E35\u0E19\u0E31\u0E49\u0E19\u0E21\u0E35\u0E21\u0E32\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E25\u0E32\u0E22\u0E15\u0E32\n\u0E40\u0E0A\u0E48\u0E19
+      \u0E27\u0E34\u0E0D\u0E0D\u0E32\u0E13 \u0E42\u0E04\u0E23\u0E07\u0E01\u0E23\u0E30\u0E14\u0E39\u0E01
+      \u0E0B\u0E2D\u0E21\u0E1A\u0E35\u0E49\n\u0E41\u0E21\u0E49\u0E01\u0E23\u0E30\u0E17\u0E31\u0E48\u0E07\u0E41\u0E27\u0E21\u0E44\u0E1E\u0E23\u0E4C\u0E22\u0E31\u0E07\u0E21\u0E35\u0E40\u0E25\u0E22\u0E19\u0E30"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E1E\u0E27\u0E01\u0E40\u0E02\u0E32\u0E2A\u0E48\u0E27\u0E19\u0E43\u0E2B\u0E0D\u0E48\u0E21\u0E31\u0E01\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E08\u0E14\u0E08\u0E33\n\u0E04\u0E27\u0E32\u0E21\u0E17\u0E23\u0E07\u0E08\u0E33\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E21\u0E19\u0E38\u0E29\u0E22\u0E4C\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E21\u0E31\u0E01\u0E40\u0E01\u0E34\u0E14\u0E08\u0E32\u0E01\u0E1B\u0E13\u0E34\u0E18\u0E32\u0E19\u0E2D\u0E31\u0E19\u0E41\u0E23\u0E07\u0E01\u0E25\u0E49\u0E32\n\u0E44\u0E21\u0E48\u0E01\u0E47\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E32\u0E23\u0E15\u0E32\u0E22\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E38\u0E01\u0E02\u0E4C\u0E17\u0E23\u0E21\u0E32\u0E19\n\u0E08\u0E19\u0E08\u0E14\u0E08\u0E33\u0E44\u0E14\u0E49\u0E02\u0E36\u0E49\u0E19\u0E43\u0E08"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E0A\u0E31\u0E01\u0E08\u0E30\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E40\u0E27\u0E25\u0E32\u0E41\u0E25\u0E49\u0E27\u0E2A\u0E34\n\u0E16\u0E49\u0E32\u0E40\u0E0A\u0E48\u0E19\u0E19\u0E31\u0E49\u0E19\u0E40\u0E23\u0E32\u0E21\u0E32\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E23\u0E32\u0E27\n\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E01\u0E40\u0E23\u0E32\u0E01\u0E31\u0E19\u0E14\u0E35\u0E01\u0E27\u0E48\u0E32"
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: .
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: '.
+
+      ...'
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: '.
+
+      ...
+
+      .....'
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: '...
+
+      .....
+
+      .......'
+    showPlayer: 0
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E09\u0E31\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E43\u0E04\u0E23\u0E01\u0E31\u0E19\u0E19\u0E30?"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E27\u0E19\u0E40\u0E27\u0E35\u0E22\u0E19\u0E40\u0E02\u0E49\u0E32\u0E21\u0E32\u0E43\u0E19\u0E2B\u0E31\u0E27\u0E40\u0E2A\u0E21\u0E2D\n\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E25\u0E37\u0E21\u0E15\u0E32\u0E02\u0E36\u0E49\u0E19"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48\u0E0B\u0E2D\u0E21\u0E1A\u0E35\u0E49\u0E15\u0E48\u0E32\u0E07\u0E1A\u0E2D\u0E01\u0E01\u0E31\u0E19\u0E27\u0E48\u0E32\n\u0E09\u0E31\u0E19\u0E14\u0E39\u0E2D\u0E32\u0E22\u0E38\u0E19\u0E49\u0E2D\u0E22"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E27\u0E48\u0E32\u0E15\u0E19\u0E40\u0E2D\u0E07\n\u0E01\u0E47\u0E04\u0E07\u0E44\u0E21\u0E48\u0E15\u0E48\u0E32\u0E07\u0E08\u0E32\u0E01\u0E1E\u0E27\u0E01\u0E40\u0E02\u0E32\u0E21\u0E32\u0E01\u0E2B\u0E23\u0E2D\u0E01"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E41\u0E15\u0E48\u0E1E\u0E2D\u0E16\u0E36\u0E07\u0E04\u0E23\u0E31\u0E49\u0E07\u0E41\u0E23\u0E01\u0E17\u0E35\u0E48\u0E09\u0E31\u0E19\u0E2A\u0E48\u0E2D\u0E07\u0E01\u0E23\u0E30\u0E08\u0E01\n\u0E01\u0E47\u0E15\u0E01\u0E43\u0E08\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E1A\u0E2D\u0E01\u0E44\u0E21\u0E48\u0E16\u0E39\u0E01"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48\u0E41\u0E04\u0E48\u0E2D\u0E32\u0E22\u0E38\u0E19\u0E49\u0E2D\u0E22\u0E41\u0E25\u0E49\u0E27!\n\u0E19\u0E35\u0E48\u0E21\u0E31\u0E19\u0E40\u0E14\u0E47\u0E01\u0E41\u0E25\u0E49\u0E27\u0E40\u0E1F\u0E49\u0E22!!"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E04\u0E27\u0E32\u0E21\u0E2B\u0E07\u0E38\u0E14\u0E2B\u0E07\u0E34\u0E14\u0E44\u0E14\u0E49\u0E01\u0E25\u0E37\u0E19\u0E01\u0E34\u0E19\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\n\u0E02\u0E2D\u0E07\u0E09\u0E31\u0E19\u0E08\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E14\u0E1E\u0E25\u0E48\u0E32\u0E19"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E09\u0E31\u0E19\u0E08\u0E33\u0E44\u0E14\u0E49\u0E27\u0E48\u0E32\u0E43\u0E0A\u0E49\u0E40\u0E27\u0E25\u0E32\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C\n\u0E01\u0E27\u0E48\u0E32\u0E15\u0E19\u0E40\u0E2D\u0E07\u0E08\u0E30\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E22\u0E2D\u0E21\u0E23\u0E31\u0E1A\u0E21\u0E31\u0E19\u0E44\u0E14\u0E49"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E2B\u0E19\u0E38\u0E48\u0E21\u0E19\u0E49\u0E2D\u0E22\u0E2D\u0E22\u0E39\u0E48\u0E23\u0E36\u0E40\u0E1B\u0E25\u0E48\u0E32~"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E04\u0E19\u0E40\u0E02\u0E32\u0E08\u0E30\u0E2B\u0E25\u0E31\u0E1A\u0E08\u0E30\u0E19\u0E2D\u0E19\n\u0E2D\u0E22\u0E48\u0E32\u0E21\u0E32\u0E01\u0E27\u0E19\u0E08\u0E30\u0E44\u0E14\u0E49\u0E44\u0E2B\u0E21\u0E40\u0E19\u0E35\u0E48\u0E22...)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E14\u0E39\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E2A\u0E34\u0E19\u0E30\n\u0E09\u0E31\u0E19\u0E2D\u0E22\u0E32\u0E01\u0E1E\u0E32\u0E04\u0E19\u0E21\u0E32\u0E41\u0E19\u0E30\u0E19\u0E33\u0E43\u0E2B\u0E49\u0E19\u0E32\u0E22\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E0B\u0E30\u0E2B\u0E19\u0E48\u0E2D\u0E22"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E44\u0E21\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E40\u0E25\u0E22\u0E2A\u0E31\u0E01\u0E01\u0E23\u0E30\u0E15\u0E34\u0E4A\u0E14)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E40\u0E18\u0E2D\u0E04\u0E19\u0E19\u0E35\u0E49\u0E0A\u0E37\u0E48\u0E2D
+      \u0E25\u0E32\u0E25\u0E48\u0E32 \u0E40\u0E1B\u0E47\u0E19\u0E41\u0E1F\u0E19\u0E2A\u0E32\u0E27\u0E02\u0E2D\u0E07\u0E09\u0E31\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E44\u0E2D\u0E49\u0E40\u0E27\u0E23\u0E19\u0E35\u0E48\u0E21\u0E31\u0E19\u0E44\u0E21\u0E48\u0E04\u0E34\u0E14\u0E08\u0E30\u0E1F\u0E31\u0E07\u0E40\u0E25\u0E22\u0E19\u0E35\u0E48\u0E2B\u0E27\u0E48\u0E32)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Lala
+    text: "\u0E22\u0E34\u0E19\u0E14\u0E35\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E04\u0E48\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E22\u0E34\u0E19\u0E14\u0E35\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01?)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E40\u0E18\u0E2D\u0E04\u0E19\u0E19\u0E35\u0E49\u0E19\u0E48\u0E30\u0E19\u0E30..."
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1C\u0E21\u0E44\u0E14\u0E49\u0E1F\u0E31\u0E07\u0E01\u0E32\u0E23\u0E2A\u0E32\u0E18\u0E22\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E14\u0E35
+      \u0E27\u0E48\u0E32\u0E41\u0E1F\u0E19\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\u0E19\u0E31\u0E49\u0E19\u0E40\u0E08\u0E4B\u0E07\u0E41\u0E04\u0E48\u0E44\u0E2B\u0E19
+      \u0E22\u0E32\u0E27\u0E40\u0E1B\u0E47\u0E19\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E42\u0E14\u0E22\u0E17\u0E35\u0E48\u0E15\u0E31\u0E27\u0E1C\u0E21\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E25\u0E38\u0E01\u0E44\u0E1B\u0E44\u0E2B\u0E19
+      \u0E40\u0E1E\u0E23\u0E32\u0E30\u0E23\u0E48\u0E32\u0E07\u0E01\u0E32\u0E22\u0E01\u0E33\u0E25\u0E31\u0E07\u0E1E\u0E31\u0E01\u0E1F\u0E37\u0E49\u0E19\u0E2D\u0E22\u0E39\u0E48
+      \u0E21\u0E35\u0E40\u0E1E\u0E35\u0E22\u0E07\u0E2A\u0E15\u0E34\u0E2A\u0E31\u0E21\u0E1B\u0E0A\u0E31\u0E0D\u0E0D\u0E30\u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E07\u0E32\u0E19\u0E2D\u0E22\u0E39\u0E48"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E17\u0E31\u0E49\u0E07\u0E2A\u0E27\u0E22 \u0E17\u0E23\u0E07\u0E40\u0E2A\u0E19\u0E48\u0E2B\u0E4C\n\u0E2D\u0E35\u0E01\u0E17\u0E31\u0E49\u0E07\u0E22\u0E31\u0E07\u0E43\u0E08\u0E14\u0E35\u0E2D\u0E35\u0E01\u0E15\u0E48\u0E32\u0E07\u0E2B\u0E32\u0E01"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E25\u0E32\u0E25\u0E48\u0E32 \u0E0A\u0E32\u0E15\u0E34\u0E19\u0E35\u0E49\u0E1C\u0E21\u0E01\u0E47\u0E44\u0E21\u0E48\u0E23\u0E39\u0E49\n\u0E08\u0E30\u0E21\u0E35\u0E43\u0E04\u0E23\u0E14\u0E35\u0E44\u0E14\u0E49\u0E40\u0E17\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E41\u0E25\u0E49\u0E27"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Lala
+    text: "\u0E1A\u0E49\u0E32\u0E08\u0E23\u0E34\u0E07\u0E40\u0E0A\u0E35\u0E22\u0E27
+      \u0E21\u0E31\u0E19\u0E40\u0E02\u0E34\u0E19\u0E19\u0E30\u0E04\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E43\u0E04\u0E23\u0E01\u0E47\u0E44\u0E14\u0E49\u0E40\u0E2D\u0E32\u0E44\u0E2D\u0E49\u0E2A\u0E2D\u0E07\u0E04\u0E19\u0E19\u0E35\u0E49\u0E2D\u0E2D\u0E01\u0E44\u0E1B\u0E17\u0E35~)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E1E\u0E39\u0E14\u0E16\u0E36\u0E07\u0E19\u0E32\u0E22\u0E19\u0E35\u0E48\n\u0E19\u0E48\u0E32\u0E2A\u0E07\u0E2A\u0E32\u0E23\u0E08\u0E23\u0E34\u0E07
+      \u0E46 \u0E40\u0E25\u0E22\u0E19\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E2A\u0E07\u0E2A\u0E32\u0E23\u0E2D\u0E30\u0E44\u0E23?)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E15\u0E32\u0E22\u0E17\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E22\u0E31\u0E07\u0E40\u0E22\u0E32\u0E27\u0E4C\u0E27\u0E31\u0E22\n\u0E2B\u0E19\u0E49\u0E32\u0E15\u0E32\u0E41\u0E25\u0E30\u0E23\u0E39\u0E1B\u0E23\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E14\u0E47\u0E01\u0E02\u0E2D\u0E07\u0E19\u0E32\u0E22\n\u0E04\u0E07\u0E22\u0E32\u0E01\u0E17\u0E35\u0E48\u0E08\u0E30\u0E44\u0E1B\u0E15\u0E49\u0E2D\u0E07\u0E15\u0E32\u0E43\u0E04\u0E23"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E2D\u0E14\u0E17\u0E19\u0E40\u0E2D\u0E32\u0E44\u0E27\u0E49...)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E16\u0E49\u0E32\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E31\u0E49\u0E19\u0E09\u0E31\u0E19\u0E02\u0E2D\u0E15\u0E31\u0E27\n\u0E44\u0E1B\u0E40\u0E14\u0E15\u0E01\u0E31\u0E1A\u0E25\u0E32\u0E25\u0E48\u0E32\u0E15\u0E48\u0E2D\u0E25\u0E30\u0E01\u0E31\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Gary
+    text: "\u0E02\u0E2D\u0E43\u0E2B\u0E49\u0E42\u0E0A\u0E04\u0E14\u0E35\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E04\u0E23\u0E2D\u0E07\u0E42\u0E2A\u0E14\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E25\u0E19\u0E30\n\u0E1E\u0E48\u0E2D\u0E2B\u0E19\u0E38\u0E48\u0E21!"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E01\u0E32\u0E23\u0E40\u0E14\u0E34\u0E19\u0E08\u0E32\u0E01\u0E44\u0E1B\u0E02\u0E2D\u0E07\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\n\u0E41\u0E21\u0E49\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E17\u0E35\u0E48\u0E1E\u0E36\u0E07\u0E1E\u0E2D\u0E43\u0E08\u0E02\u0E2D\u0E07\u0E0B\u0E2D\u0E21\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E01\u0E48\u0E2D\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E41\u0E15\u0E48\u0E43\u0E19\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49\u0E40\u0E02\u0E32\u0E01\u0E25\u0E31\u0E1A\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E19\u0E48\u0E32\u0E2A\u0E21\u0E40\u0E1E\u0E0A\n\u0E17\u0E35\u0E48\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E14\u0E39\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E1E\u0E48\u0E32\u0E22\u0E41\u0E1E\u0E49\u0E15\u0E48\u0E2D\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\n\u0E44\u0E1B\u0E41\u0E25\u0E49\u0E27\u0E42\u0E14\u0E22\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E0A\u0E34\u0E07"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E44\u0E2D\u0E49! \u0E40\u0E27\u0E23! \u0E40\u0E2D\u0E49\u0E22!"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1C\u0E21\u0E44\u0E14\u0E49\u0E25\u0E38\u0E01\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E07\u0E2D\u0E15\u0E31\u0E27\n\u0E44\u0E14\u0E49\u0E2A\u0E31\u0E01\u0E04\u0E23\u0E36\u0E48\u0E07\u0E15\u0E31\u0E27\u0E08\u0E32\u0E01\u0E2B\u0E25\u0E38\u0E21\u0E28\u0E1E"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E2A\u0E21\u0E40\u0E1E\u0E0A\n\u0E44\u0E14\u0E49\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E27\u0E32\u0E21\u0E04\u0E25\u0E31\u0E48\u0E07\u0E41\u0E04\u0E49\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E2A\u0E21\u0E40\u0E1E\u0E0A\n\u0E44\u0E14\u0E49\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E27\u0E32\u0E21\u0E04\u0E25\u0E31\u0E48\u0E07\u0E41\u0E04\u0E49\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1C\u0E21\u0E15\u0E30\u0E42\u0E01\u0E19\u0E14\u0E48\u0E32\u0E15\u0E32\u0E21\u0E2B\u0E25\u0E31\u0E07\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\n\u0E17\u0E35\u0E48\u0E01\u0E33\u0E25\u0E31\u0E07\u0E2B\u0E32\u0E22\u0E27\u0E31\u0E1A\u0E44\u0E1B\u0E44\u0E01\u0E25\u0E2A\u0E38\u0E14\u0E2A\u0E32\u0E22\u0E15\u0E32\n\u0E42\u0E14\u0E22\u0E44\u0E21\u0E48\u0E41\u0E22\u0E41\u0E2A"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E01\u0E32\u0E23\u0E01\u0E23\u0E30\u0E17\u0E33\u0E02\u0E2D\u0E07\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\n\u0E40\u0E1B\u0E23\u0E35\u0E22\u0E1A\u0E44\u0E14\u0E49\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E23\u0E32\u0E14\u0E19\u0E49\u0E33\u0E21\u0E31\u0E19\u0E40\u0E02\u0E49\u0E32\u0E01\u0E2D\u0E07\u0E40\u0E1E\u0E25\u0E34\u0E07"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E17\u0E35\u0E48\u0E43\u0E19\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49\u0E44\u0E14\u0E49\u0E08\u0E38\u0E14\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E22\n\u0E41\u0E23\u0E07\u0E41\u0E04\u0E49\u0E19\u0E02\u0E2D\u0E07\u0E1C\u0E21\u0E08\u0E19\u0E04\u0E38\u0E01\u0E23\u0E38\u0E48\u0E19\u0E40\u0E15\u0E47\u0E21\u0E17\u0E35\u0E48"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\u0E04\u0E2D\u0E22\u0E14\u0E39\u0E09\u0E31\u0E19\u0E43\u0E2B\u0E49\u0E14\u0E35\u0E25\u0E48\u0E30!\n\u0E09\u0E31\u0E19\u0E08\u0E30\u0E2B\u0E32\u0E41\u0E1F\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E31\u0E27\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E19\u0E43\u0E2B\u0E49\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22!"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1C\u0E21\u0E44\u0E14\u0E49\u0E25\u0E38\u0E01\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E08\u0E32\u0E01\u0E2A\u0E38\u0E2A\u0E32\u0E19\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E15\u0E47\u0E21\u0E15\u0E31\u0E27
+      \u0E21\u0E37\u0E2D\u0E02\u0E2D\u0E07\u0E1C\u0E21\u0E1B\u0E31\u0E14\u0E40\u0E28\u0E29\u0E2B\u0E34\u0E19\u0E41\u0E25\u0E30\u0E14\u0E34\u0E19
+      \u0E17\u0E35\u0E48\u0E40\u0E1B\u0E23\u0E2D\u0E30\u0E40\u0E1B\u0E37\u0E49\u0E2D\u0E19\u0E23\u0E48\u0E32\u0E07\u0E01\u0E32\u0E22"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E40\u0E2D\u0E32\u0E25\u0E48\u0E30 \u0E16\u0E49\u0E32\u0E2D\u0E22\u0E32\u0E01\u0E08\u0E30\u0E2B\u0E32\u0E41\u0E1F\u0E19
+      \u0E01\u0E47\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E1B\u0E43\u0E19\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E35\u0E48\u0E20\u0E39\u0E15\u0E1C\u0E35\u0E0A\u0E38\u0E01\u0E0A\u0E38\u0E21"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E41\u0E15\u0E48\u0E21\u0E31\u0E19\u0E08\u0E30\u0E44\u0E1B\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E41\u0E1A\u0E1A\u0E19\u0E31\u0E49\u0E19
+      \u0E0B\u0E30\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19\u0E43\u0E19\u0E40\u0E27\u0E25\u0E32\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E35\u0E49..."
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E2B\u0E32\u0E07\u0E15\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E02\u0E32\u0E44\u0E1B\u0E2A\u0E30\u0E14\u0E38\u0E14\u0E40\u0E02\u0E49\u0E32\u0E01\u0E31\u0E1A\u0E14\u0E27\u0E07\u0E44\u0E1F
+      \u0E17\u0E35\u0E48\u0E2A\u0E27\u0E48\u0E32\u0E07\u0E44\u0E2A\u0E27\u0E23\u0E32\u0E27\u0E01\u0E31\u0E1A\u0E08\u0E30\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E04\u0E48\u0E33\u0E04\u0E37\u0E19
+      \u0E43\u0E2B\u0E49\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E25\u0E32\u0E07\u0E27\u0E31\u0E19"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E20\u0E39\u0E15\u0E1C\u0E35\u0E21\u0E32\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E25\u0E32\u0E22\u0E15\u0E32
+      \u0E15\u0E48\u0E32\u0E07\u0E1E\u0E32\u0E01\u0E31\u0E19\u0E0A\u0E38\u0E21\u0E19\u0E38\u0E21\u0E2D\u0E22\u0E39\u0E48\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E2B\u0E25\u0E48\u0E07\u0E17\u0E35\u0E48\u0E21\u0E32\u0E02\u0E2D\u0E07\u0E44\u0E1F"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E0B\u0E2D\u0E21\u0E08\u0E36\u0E07\u0E40\u0E14\u0E34\u0E19\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E14\u0E39\u0E27\u0E48\u0E32\n\u0E21\u0E31\u0E19\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E40\u0E01\u0E34\u0E14\u0E02\u0E36\u0E49\u0E19\u0E01\u0E31\u0E19\u0E41\u0E19\u0E48"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1E\u0E35\u0E48 \u0E46 \u0E40\u0E02\u0E32\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E01\u0E31\u0E19\n\u0E17\u0E33\u0E44\u0E21\u0E04\u0E19\u0E21\u0E31\u0E19\u0E40\u0E22\u0E2D\u0E30\u0E07\u0E35\u0E49?"
+    showPlayer: 1
+    showCharacter: 0
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Skeleton A
+    text: "\u0E40\u0E2D\u0E49\u0E32 \u0E19\u0E35\u0E48\u0E19\u0E49\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E23\u0E39\u0E49\u0E40\u0E2B\u0E23\u0E2D\n\u0E27\u0E48\u0E32\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E27\u0E31\u0E19\u0E2D\u0E30\u0E44\u0E23?"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E27\u0E31\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E2D\u0E30\u0E1E\u0E35\u0E48?"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Skeleton B
+    text: "\u0E27\u0E31\u0E19\u0E1E\u0E34\u0E18\u0E35\u0E1A\u0E27\u0E07\u0E2A\u0E23\u0E27\u0E07\u0E40\u0E17\u0E1E\u0E35\u0E41\u0E2B\u0E48\u0E07\u0E04\u0E27\u0E32\u0E21\u0E15\u0E32\u0E22\n\u0E22\u0E31\u0E07\u0E44\u0E07\u0E40\u0E25\u0E48\u0E32!"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1E\u0E34\u0E18\u0E35\u0E1A\u0E27\u0E07\u0E2A\u0E23\u0E27\u0E07\u0E40\u0E17\u0E1E\u0E35\u0E41\u0E2B\u0E48\u0E07\u0E04\u0E27\u0E32\u0E21\u0E15\u0E32\u0E22\n\u0E21\u0E31\u0E19\u0E04\u0E37\u0E2D\u0E2D\u0E30\u0E44\u0E23\u0E2D\u0E30\u0E1E\u0E35\u0E48?"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Skeleton A
+    text: "\u0E21\u0E31\u0E19\u0E04\u0E37\u0E2D\u0E1E\u0E34\u0E18\u0E35\u0E40\u0E09\u0E25\u0E34\u0E21\u0E09\u0E25\u0E2D\u0E07\u0E02\u0E2D\u0E07\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E1C\u0E39\u0E49\u0E27\u0E32\u0E22\u0E0A\u0E19\u0E21\u0E4C\n\u0E40\u0E17\u0E48\u0E32\u0E17\u0E35\u0E48\u0E09\u0E31\u0E19\u0E23\u0E39\u0E49\u0E19\u0E48\u0E30\u0E19\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E02\u0E2D\u0E1C\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E19\u0E2D\u0E18\u0E34\u0E1A\u0E32\u0E22\u0E19\u0E30\u0E04\u0E23\u0E31\u0E1A\n\u0E2E\u0E38\u0E2E\u0E34\u0E2E\u0E38\u0E2E\u0E34"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E1E\u0E34\u0E18\u0E35\u0E1A\u0E27\u0E07\u0E2A\u0E23\u0E27\u0E07\u0E40\u0E17\u0E1E\u0E35\u0E41\u0E2B\u0E48\u0E07\u0E04\u0E27\u0E32\u0E21\u0E15\u0E32\u0E22\n\u0E21\u0E35\u0E15\u0E49\u0E19\u0E01\u0E33\u0E40\u0E19\u0E34\u0E14\u0E21\u0E32\u0E08\u0E32\u0E01\u0E01\u0E32\u0E23\u0E1A\u0E39\u0E0A\u0E32\u0E22\u0E31\u0E0D\n\u0E23\u0E48\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E1C\u0E39\u0E49\u0E27\u0E32\u0E22\u0E0A\u0E19\u0E21\u0E4C\u0E43\u0E19\u0E2D\u0E14\u0E35\u0E15"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E23\u0E32\u0E27\u0E23\u0E38\u0E48\u0E19\u0E1B\u0E39\u0E48\u0E02\u0E2D\u0E07\u0E1C\u0E21\u0E44\u0E14\u0E49\n\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E27\u0E25\u0E32\u0E19\u0E31\u0E49\u0E19\u0E40\u0E23\u0E32\u0E1A\u0E39\u0E0A\u0E32\u0E22\u0E31\u0E0D\n\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E1B\u0E32\u0E0F\u0E34\u0E2B\u0E32\u0E23\u0E34\u0E22\u0E4C\u0E43\u0E19\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E41\u0E21\u0E49\u0E01\u0E23\u0E30\u0E17\u0E31\u0E48\u0E07\u0E43\u0E19\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21\u0E1B\u0E23\u0E32\u0E1A\u0E20\u0E31\u0E22\u0E2A\u0E23\u0E23\u0E1E\u0E0A\u0E35\u0E27\u0E34\u0E15\n\u0E01\u0E47\u0E22\u0E31\u0E07\u0E21\u0E35\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E40\u0E25\u0E22\u0E19\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21\u0E04\u0E23\u0E31\u0E49\u0E07\u0E19\u0E31\u0E49\u0E19\n\u0E1E\u0E34\u0E18\u0E35\u0E19\u0E35\u0E49\u0E01\u0E47\u0E21\u0E35\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E15\u0E48\u0E2D\u0E21\u0E32\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22
+      \u0E46"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E41\u0E15\u0E48\u0E14\u0E39\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E1E\u0E35\u0E22\u0E07\n\u0E02\u0E2D\u0E07\u0E40\u0E25\u0E35\u0E22\u0E19\u0E41\u0E1A\u0E1A\u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E17\u0E33\u0E44\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E04\u0E48\u0E02\u0E2D\u0E07\u0E40\u0E25\u0E35\u0E22\u0E19\u0E41\u0E1A\u0E1A\u0E40\u0E2B\u0E23\u0E2D\u0E04\u0E23\u0E31\u0E1A?"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E07\u0E40\u0E27\u0E22\u0E43\u0E04\u0E23\n\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E2A\u0E21\u0E31\u0E22\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21\u0E41\u0E25\u0E49\u0E27\u0E19\u0E48\u0E30\u0E2A\u0E34"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E07\u0E32\u0E19\u0E23\u0E37\u0E48\u0E19\u0E40\u0E23\u0E34\u0E07\u0E42\u0E14\u0E22\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C\n\u0E2E\u0E38\u0E2E\u0E34"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Skeleton B
+    text: "\u0E40\u0E2B\u0E47\u0E19\u0E27\u0E48\u0E32\u0E07\u0E32\u0E19\u0E04\u0E23\u0E31\u0E49\u0E07\u0E19\u0E35\u0E49\n\u0E17\u0E48\u0E32\u0E19\u0E1B\u0E23\u0E32\u0E0A\u0E0D\u0E4C\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E19\u0E08\u0E31\u0E14\u0E19\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1B\u0E23\u0E32\u0E0A\u0E0D\u0E4C \u0E04\u0E33\u0E40\u0E23\u0E35\u0E22\u0E01\u0E02\u0E2D\u0E07\u0E1C\u0E39\u0E49\u0E40\u0E1B\u0E35\u0E48\u0E22\u0E21\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\n\u0E1C\u0E21\u0E23\u0E39\u0E49\u0E21\u0E32\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E40\u0E02\u0E32\u0E27\u0E07\u0E01\u0E15\u0E02\u0E36\u0E49\u0E19\n\u0E20\u0E32\u0E22\u0E43\u0E19\u0E2A\u0E38\u0E2A\u0E32\u0E19\u0E41\u0E2B\u0E48\u0E07\u0E19\u0E35\u0E49"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E41\u0E15\u0E48\u0E01\u0E47\u0E44\u0E21\u0E48\u0E22\u0E31\u0E01\u0E08\u0E30\u0E04\u0E34\u0E14\u0E27\u0E48\u0E32\n\u0E40\u0E18\u0E2D\u0E08\u0E30\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E21\u0E31\u0E19\u0E43\u0E2B\u0E0D\u0E48\u0E42\u0E15\u0E02\u0E19\u0E32\u0E14\u0E19\u0E35\u0E49"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E42\u0E14\u0E22\u0E1C\u0E21\u0E44\u0E21\u0E48\u0E23\u0E39\u0E49\u0E15\u0E31\u0E27\u0E40\u0E25\u0E22\u0E2A\u0E31\u0E01\u0E01\u0E23\u0E30\u0E15\u0E34\u0E4A\u0E14
+      \u0E04\u0E07\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E1E\u0E23\u0E32\u0E30\u0E40\u0E27\u0E17\u0E21\u0E19\u0E15\u0E23\u0E4C\u0E01\u0E23\u0E30\u0E21\u0E31\u0E07\u0E19\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Skeleton B
+    text: "\u0E41\u0E25\u0E49\u0E27\u0E44\u0E2D\u0E49\u0E2B\u0E19\u0E39 \u0E44\u0E14\u0E49\u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D\u0E21\u0E32\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E2A\u0E34\u0E19\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D \u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D\u0E2D\u0E30\u0E44\u0E23!?"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19\u0E22\u0E31\u0E07\u0E44\u0E07\u0E25\u0E48\u0E30\u0E04\u0E23\u0E31\u0E1A"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E2D\u0E22\u0E48\u0E32\u0E1A\u0E2D\u0E01\u0E19\u0E30\u0E27\u0E48\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E1A\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E40\u0E02\u0E32
+      \u0E19\u0E48\u0E32\u0E2A\u0E07\u0E2A\u0E32\u0E23\u0E08\u0E23\u0E34\u0E07 \u0E46
+      \u0E40\u0E25\u0E22\u0E19\u0E30\u0E04\u0E23\u0E31\u0E1A \u0E2E\u0E38\u0E2E\u0E34\u0E2E\u0E38\u0E2E\u0E34"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E2E\u0E38\u0E2E\u0E34\u0E2E\u0E38\u0E2E\u0E34 \u0E1A\u0E49\u0E32\u0E19\u0E1B\u0E49\u0E32\u0E40\u0E2D\u0E47\u0E07\u0E2A\u0E34!)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Vampire
+    text: "\u0E42\u0E2D\u0E4A\u0E30 \u0E14\u0E39\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E16\u0E36\u0E07\u0E04\u0E34\u0E27\u0E1C\u0E21\u0E41\u0E25\u0E49\u0E27\n\u0E02\u0E2D\u0E1C\u0E48\u0E32\u0E19\u0E17\u0E32\u0E07\u0E44\u0E1B\u0E19\u0E30\u0E04\u0E23\u0E31\u0E1A"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E41\u0E15\u0E48\u0E16\u0E36\u0E07\u0E01\u0E23\u0E30\u0E19\u0E31\u0E49\u0E19\u0E01\u0E47\u0E22\u0E31\u0E07\u0E21\u0E35\u0E1E\u0E27\u0E01\u0E17\u0E35\u0E48\u0E08\u0E33\u0E44\u0E14\u0E49\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E0A\u0E48\u0E19\u0E01\u0E31\u0E19
+      \u0E21\u0E31\u0E01\u0E40\u0E01\u0E34\u0E14\u0E08\u0E32\u0E01\u0E1B\u0E19\u0E34\u0E17\u0E32\u0E19\u0E2D\u0E31\u0E19\u0E41\u0E23\u0E07\u0E01\u0E25\u0E49\u0E32\u0E44\u0E21\u0E48\u0E01\u0E47\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E32\u0E23\u0E15\u0E32\u0E22\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E38\u0E01\u0E02\u0E4C\u0E17\u0E23\u0E21\u0E32\u0E13\u0E08\u0E19\u0E08\u0E14\u0E08\u0E33\u0E44\u0E14\u0E49\u0E02\u0E36\u0E49\u0E19\u0E43\u0E08"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E41\u0E27\u0E21\u0E44\u0E1E\u0E23\u0E4C\u0E40\u0E14\u0E34\u0E19\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E43\u0E19\u0E07\u0E32\u0E19\n\u0E1C\u0E48\u0E32\u0E19\u0E40\u0E08\u0E49\u0E32\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E23\u0E31\u0E01\u0E29\u0E32\u0E04\u0E27\u0E32\u0E21\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22\n\u0E15\u0E32\u0E21\u0E2B\u0E25\u0E31\u0E07\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E42\u0E04\u0E23\u0E07\u0E01\u0E23\u0E30\u0E14\u0E39\u0E01\u0E17\u0E31\u0E49\u0E07\u0E2A\u0E2D\u0E07"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E2A\u0E07\u0E2A\u0E31\u0E22\u0E1C\u0E21\u0E04\u0E07\u0E2B\u0E21\u0E14\u0E2B\u0E27\u0E31\u0E07\u0E41\u0E25\u0E49\u0E27\n\u0E02\u0E19\u0E32\u0E14\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19\n\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E40\u0E02\u0E32"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E2A\u0E34 \u0E1E\u0E2D\u0E21\u0E32\u0E04\u0E34\u0E14\u0E14\u0E39\u0E41\u0E25\u0E49\u0E27\n\u0E17\u0E35\u0E48\u0E41\u0E01\u0E23\u0E23\u0E35\u0E48\u0E1A\u0E2D\u0E01\u0E27\u0E48\u0E32\u0E44\u0E1B\u0E40\u0E14\u0E15\n\u0E2D\u0E22\u0E48\u0E32\u0E1A\u0E2D\u0E01\u0E19\u0E30\u0E27\u0E48\u0E32\u0E40\u0E1B\u0E47\u0E19\u0E20\u0E32\u0E22\u0E43\u0E19\u0E07\u0E32\u0E19\u0E19\u0E48\u0E30"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E44\u0E2B\u0E07\u0E09\u0E31\u0E19\u0E16\u0E36\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\n\u0E41\u0E15\u0E48\u0E44\u0E2D\u0E49\u0E0B\u0E31\u0E07\u0E01\u0E30\u0E1A\u0E4A\u0E27\u0E22\u0E19\u0E31\u0E48\u0E19\u0E21\u0E31\u0E19\u0E44\u0E14\u0E49\u0E40\u0E02\u0E49\u0E32\u0E1F\u0E30!!!"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E2B\u0E22\u0E14\u0E1D\u0E19\u0E44\u0E14\u0E49\u0E23\u0E48\u0E27\u0E07\u0E2B\u0E25\u0E48\u0E19\u0E08\u0E32\u0E01\u0E17\u0E49\u0E2D\u0E07\u0E1F\u0E49\u0E32\n\u0E01\u0E23\u0E30\u0E17\u0E1A\u0E17\u0E35\u0E48\u0E43\u0E1A\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E0B\u0E2D\u0E21"
+    showPlayer: 0
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E40\u0E2D\u0E4A\u0E30 \u0E1D\u0E19\u0E15\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E31\u0E49\u0E19\u0E40\u0E2B\u0E23\u0E2D?"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E09\u0E31\u0E19\u0E40\u0E07\u0E22\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E36\u0E49\u0E19\u0E44\u0E1B\u0E21\u0E2D\u0E07\u0E1A\u0E19\u0E17\u0E49\u0E2D\u0E07\u0E1F\u0E49\u0E32\n\u0E16\u0E36\u0E07\u0E08\u0E30\u0E21\u0E35\u0E40\u0E21\u0E06\u0E1B\u0E01\u0E04\u0E25\u0E38\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2B\u0E22\u0E48\u0E2D\u0E21
+      \u0E46 \u0E1A\u0E49\u0E32\u0E07"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E41\u0E15\u0E48\u0E01\u0E47\u0E44\u0E21\u0E48\u0E21\u0E35\u0E27\u0E35\u0E48\u0E41\u0E27\u0E27\u0E17\u0E35\u0E48\u0E1D\u0E19\u0E08\u0E30\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E01\n\u0E40\u0E25\u0E22\u0E41\u0E21\u0E49\u0E41\u0E15\u0E48\u0E19\u0E49\u0E2D\u0E22"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E02\u0E13\u0E30\u0E14\u0E27\u0E07\u0E15\u0E32\u0E19\u0E35\u0E49\u0E01\u0E33\u0E25\u0E31\u0E07\u0E01\u0E27\u0E32\u0E14\u0E14\u0E39\u0E27\u0E48\u0E32\n\u0E1D\u0E19\u0E21\u0E32\u0E08\u0E32\u0E01\u0E44\u0E2B\u0E19"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E01\u0E47\u0E44\u0E14\u0E49\u0E44\u0E1B\u0E2A\u0E1A\u0E15\u0E32\u0E01\u0E31\u0E1A\u0E2B\u0E0D\u0E34\u0E07\u0E2A\u0E32\u0E27\n\u0E1A\u0E19\u0E23\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E07\u0E40\u0E2A\u0E35\u0E22\u0E41\u0E25\u0E49\u0E27"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E40\u0E18\u0E2D\u0E21\u0E35\u0E1C\u0E21\u0E27\u0E39\u0E1F\u0E04\u0E31\u0E17\u0E2A\u0E35\u0E1F\u0E49\u0E32\u0E14\u0E2D\u0E01\u0E40\u0E2D\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\n\u0E17\u0E35\u0E48\u0E15\u0E31\u0E14\u0E25\u0E07\u0E15\u0E31\u0E27\u0E01\u0E31\u0E1A\u0E2A\u0E35\u0E04\u0E23\u0E35\u0E21\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E2A\u0E27\u0E22\u0E07\u0E32\u0E21"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E41\u0E15\u0E48\u0E17\u0E33\u0E44\u0E21\u0E01\u0E31\u0E19\u0E19\u0E30\n\u0E43\u0E1A\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E18\u0E2D\u0E01\u0E25\u0E31\u0E1A\u0E14\u0E39\u0E42\u0E28\u0E01\u0E40\u0E28\u0E23\u0E49\u0E32"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E21\u0E31\u0E19\u0E44\u0E21\u0E48\u0E40\u0E02\u0E49\u0E32\u0E01\u0E31\u0E1A\u0E07\u0E32\u0E19\u0E23\u0E37\u0E48\u0E19\u0E40\u0E23\u0E34\u0E07\u0E19\u0E35\u0E49\u0E40\u0E25\u0E22"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E09\u0E31\u0E19\u0E44\u0E14\u0E49\u0E01\u0E30\u0E1E\u0E23\u0E34\u0E1A\u0E15\u0E32\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\n\u0E40\u0E18\u0E2D\u0E01\u0E47\u0E44\u0E14\u0E49\u0E2B\u0E32\u0E22\u0E44\u0E1B"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Narrator
+    text: "\u0E42\u0E14\u0E22\u0E17\u0E34\u0E49\u0E07\u0E1A\u0E32\u0E07\u0E2A\u0E34\u0E48\u0E07\u0E40\u0E2D\u0E32\u0E44\u0E27\u0E49\u0E08\u0E32\u0E01\u0E1A\u0E19\u0E17\u0E49\u0E2D\u0E07\u0E1F\u0E49\u0E32\n\u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D\u0E44\u0E14\u0E49\u0E15\u0E01\u0E25\u0E07\u0E21\u0E32\u0E1A\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E1C\u0E32\u0E01\u0E02\u0E2D\u0E07\u0E0B\u0E2D\u0E21"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 0
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E19\u0E35\u0E48\u0E21\u0E31\u0E19! \u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D\u0E19\u0E35\u0E48\u0E19\u0E32\n\u0E43\u0E19\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14\u0E01\u0E47\u0E44\u0E14\u0E49\u0E21\u0E32\u0E41\u0E25\u0E49\u0E27~\n\u0E41\u0E15\u0E48\u0E27\u0E48\u0E32..."
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "(\u0E40\u0E18\u0E2D\u0E04\u0E19\u0E19\u0E31\u0E49\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E19\u0E43\u0E2B\u0E49\u0E1A\u0E31\u0E15\u0E23\u0E40\u0E0A\u0E34\u0E0D\u0E19\u0E35\u0E49\u0E2A\u0E34\u0E19\u0E30
+      \u0E04\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E1B\u0E02\u0E2D\u0E1A\u0E04\u0E38\u0E13\u0E0B\u0E30\u0E41\u0E25\u0E49\u0E27)"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
+  - characterName: Zom
+    text: "\u0E0B\u0E2D\u0E21\u0E40\u0E14\u0E34\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E2B\u0E22\u0E34\u0E1A\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E1C\u0E49\u0E32\u0E15\u0E31\u0E27\u0E40\u0E01\u0E48\u0E07
+      \u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E14\u0E34\u0E19\u0E44\u0E1B\u0E40\u0E02\u0E49\u0E32\u0E41\u0E16\u0E27\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E40\u0E02\u0E32\u0E27\u0E07\u0E01\u0E15
+      \u0E42\u0E14\u0E22\u0E22\u0E34\u0E49\u0E21\u0E41\u0E09\u0E48\u0E07\u0E15\u0E25\u0E2D\u0E14\u0E17\u0E32\u0E07"
+    showPlayer: 1
+    showCharacter: 1
+    isPlayerSpeaking: 1
+    characterPortrait: {fileID: 0}
 --- !u!1 &1428161276
 GameObject:
   m_ObjectHideFlags: 0
@@ -6254,9 +7316,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438748893}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.003, y: 0.003, z: 0.003}
+  m_LocalScale: {x: 0.00850978, y: 0.008509781, z: 0.00850978}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1335110456}
@@ -6265,7 +7327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.77, y: 4.08}
+  m_AnchoredPosition: {x: -21.47, y: 10.21}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1438748895
@@ -6419,6 +7481,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1460556261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460556262}
+  m_Layer: 5
+  m_Name: Opening Panel 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1460556262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460556261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1869784359}
+  - {fileID: 2025208405}
+  - {fileID: 1085488577}
+  - {fileID: 1390369471}
+  - {fileID: 1815218133}
+  - {fileID: 315466642}
+  - {fileID: 2118189021}
+  m_Father: {fileID: 1908791338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1471586012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7625,6 +8729,143 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1702773443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702773444}
+  - component: {fileID: 1702773446}
+  - component: {fileID: 1702773445}
+  m_Layer: 5
+  m_Name: Dialogue Text  (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1702773444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702773443}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 739695768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.627001, y: -0.35455894}
+  m_SizeDelta: {x: 118.4996, y: 24.6382}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1702773445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702773443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u0E40\u0E19\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: fe418772904efcf4d91849da819fbc1b, type: 2}
+  m_sharedMaterial: {fileID: -451937041364412220, guid: fe418772904efcf4d91849da819fbc1b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 5
+  m_fontSizeBase: 5
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1702773446
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702773443}
+  m_CullTransparentMesh: 1
 --- !u!1 &1718659709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7874,6 +9115,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoonlitBat
   sprite: {fileID: 21300000, guid: 635d765e27dd90d4c94c3d061b6fca5b, type: 3}
   parallax: {fileID: 121542196}
+--- !u!1 &1815218132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815218133}
+  - component: {fileID: 1815218135}
+  - component: {fileID: 1815218134}
+  m_Layer: 5
+  m_Name: 'Dialogue Text '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1815218133
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815218132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.20695, y: 0.20695, z: 0.20695}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.396278, y: -9.407412}
+  m_SizeDelta: {x: 118.4996, y: 24.6382}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1815218134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815218132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u0E40\u0E19\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: fe418772904efcf4d91849da819fbc1b, type: 2}
+  m_sharedMaterial: {fileID: -451937041364412220, guid: fe418772904efcf4d91849da819fbc1b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18.95
+  m_fontSizeBase: 5
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 1
+  m_fontSizeMax: 32
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 3
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1815218135
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815218132}
+  m_CullTransparentMesh: 1
 --- !u!1 &1818834740
 GameObject:
   m_ObjectHideFlags: 0
@@ -8045,6 +9423,81 @@ Transform:
   - {fileID: 282201393}
   m_Father: {fileID: 121542197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1869784358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869784359}
+  - component: {fileID: 1869784361}
+  - component: {fileID: 1869784360}
+  m_Layer: 5
+  m_Name: Player Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1869784359
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869784358}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.18625, y: 0.18625265, z: 0.18625}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -12.301342, y: -2.6927998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1869784360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869784358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1869784361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869784358}
+  m_CullTransparentMesh: 1
 --- !u!114 &1903619943 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3609960884292757268, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
@@ -8089,7 +9542,7 @@ MonoBehaviour:
   firePoint: {fileID: 1423220501}
   damage: 20
   cooldown: 1
-  testMode: 0
+  testMode: 1
 --- !u!1 &1908791334
 GameObject:
   m_ObjectHideFlags: 0
@@ -8186,15 +9639,17 @@ RectTransform:
   m_LocalScale: {x: 1, y: 0.95, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1071212755}
+  - {fileID: 1424838556}
+  - {fileID: 1460556262}
   - {fileID: 1942125264}
   - {fileID: 1438748894}
-  - {fileID: 739695768}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.01}
-  m_SizeDelta: {x: 16.0537, y: 10.4234}
+  m_AnchoredPosition: {x: 0.0292, y: -0.0392}
+  m_SizeDelta: {x: 45.862, y: 27.0638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908791339
 MonoBehaviour:
@@ -8239,6 +9694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2664eaee76fc3c8439fd5bec5cd8fc9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveSpawner
+  openingDialogue: {fileID: 1424838557}
   waves:
   - enemyPrefabs:
     - {fileID: 6864988418885019325, guid: a7ba890f5b657994db88b81c9a668fbe, type: 3}
@@ -8342,9 +9798,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942125263}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.6287515, y: 2.6287515, z: 2.6287515}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1000369087}
@@ -8354,8 +9810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.1102}
-  m_SizeDelta: {x: 0, y: -1.7769}
+  m_AnchoredPosition: {x: -0.0291996, y: -0.079711914}
+  m_SizeDelta: {x: -29.8083, y: -18.417301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1942125265
 MonoBehaviour:
@@ -8537,7 +9993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297.33337, y: -223.33319}
+  m_AnchoredPosition: {x: 488, y: -223.33319}
   m_SizeDelta: {x: 109.9237, y: 25.7375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1984378950
@@ -8854,6 +10310,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &2025208404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025208405}
+  - component: {fileID: 2025208407}
+  - component: {fileID: 2025208406}
+  m_Layer: 5
+  m_Name: 'Character Image '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2025208405
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025208404}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.18625, y: 0.18625265, z: 0.18625}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 11.829039, y: -2.6927998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2025208406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025208404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2025208407
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025208404}
+  m_CullTransparentMesh: 1
 --- !u!1 &2055358860
 GameObject:
   m_ObjectHideFlags: 0
@@ -9230,6 +10761,139 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &2118189020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2118189021}
+  - component: {fileID: 2118189024}
+  - component: {fileID: 2118189023}
+  - component: {fileID: 2118189022}
+  m_Layer: 5
+  m_Name: SkipButton (Legacy) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2118189021
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118189020}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.041389998, y: 0.04139, z: 0.041389998}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 47726928}
+  m_Father: {fileID: 1460556262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 12.346407, y: -9.667548}
+  m_SizeDelta: {x: 160, y: 26.2213}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2118189022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118189020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2118189023}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1424838557}
+        m_TargetAssemblyTypeName: OpeningDialogue, Assembly-CSharp
+        m_MethodName: Skip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2118189023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118189020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -9215901944522325181, guid: fb1fed1a459bcff4fa46469c2de8504a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2118189024
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118189020}
+  m_CullTransparentMesh: 1
 --- !u!1 &2118525645
 GameObject:
   m_ObjectHideFlags: 0
@@ -10048,6 +11712,5 @@ SceneRoots:
   - {fileID: 7970718670058660938}
   - {fileID: 1673514138}
   - {fileID: 226897676}
-  - {fileID: 1071212755}
   - {fileID: 1818834742}
   - {fileID: 121542197}

@@ -35,7 +35,10 @@
             startX = rb.position.x;
             nextFireTime = Time.time + fireInterval;
         }
-
+        protected virtual float GetFireInterval()
+        {
+            return fireInterval;
+        }
         protected virtual void Update()
         {
             if (isDead || Time.timeScale == 0f) return;
