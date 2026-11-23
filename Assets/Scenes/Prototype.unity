@@ -323,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &121542196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4784,7 +4784,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VisualNovelDialogue
   dialoguePanel: {fileID: 739695767}
-  dialoguePanel: {fileID: 739695767}
   characterNameText: {fileID: 2069903654}
   dialogueBodyText: {fileID: 1157557989}
   nextButton: {fileID: 1673520134}
@@ -5115,6 +5114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 810229119093863017, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
+      propertyPath: windSword
+      value: 
+      objectReference: {fileID: 1903619953}
     - target: {fileID: 3609960884292757268, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
       propertyPath: gameOverUI
       value: 
@@ -5166,7 +5169,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4387557119565654944, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903619948}
+    - targetCorrespondingSourceObject: {fileID: 4387557119565654944, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903619953}
   m_SourcePrefab: {fileID: 100100000, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
 --- !u!1 &1145564124
 GameObject:
@@ -6106,6 +6115,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!4 &1423220501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7647950403178164297, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
+  m_PrefabInstance: {fileID: 1135462554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428161276
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,6 +6528,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1500806121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4387557119565654944, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
+  m_PrefabInstance: {fileID: 1135462554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1516867062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7871,7 +7890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1818834741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8031,12 +8050,46 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3609960884292757268, guid: 665e1e757b838174487e84da7c8d3230, type: 3}
   m_PrefabInstance: {fileID: 1135462554}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1500806121}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32c720fcb526d5a4cbea45eca625fca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+--- !u!114 &1903619948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500806121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1a9d3c2ac4dcc45a593226980220f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUnlock
+  powers:
+  - {fileID: 1903619953}
+--- !u!114 &1903619953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500806121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cf5736c0b3ed546a75d5ebb9aa9f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindSword
+  slotNumber: 2
+  powerName: Wind Sword
+  scoreRequirement: 5000
+  swordWavePrefab: {fileID: 8129272541205815227, guid: 22b254849d05285488c6f0f69baa2b49, type: 3}
+  firePoint: {fileID: 1423220501}
+  damage: 20
+  cooldown: 1
+  testMode: 0
 --- !u!1 &1908791334
 GameObject:
   m_ObjectHideFlags: 0
@@ -8262,6 +8315,7 @@ MonoBehaviour:
   currentBackground: {fileID: 121542195}
   stageTwoBackground: {fileID: 1818834740}
   backgroundTransitionDuration: 1.5
+  powerUnlock: {fileID: 1903619948}
 --- !u!1 &1942125263
 GameObject:
   m_ObjectHideFlags: 0

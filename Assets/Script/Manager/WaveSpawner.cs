@@ -12,6 +12,8 @@ public class WaveSpawner : MonoBehaviour
         [Min(1)] public int enemyCount = 5;
         [Min(0.01f)] public float spawnInterval = 0.5f;
     }
+    [Header("Opening Dialogue")]
+    [SerializeField] private OpeningDialogue openingDialogue;
 
     [Header("Enemy Waves")]
     [SerializeField] private Wave[] waves;
@@ -30,6 +32,16 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator Start()
     {
+        if (openingDialogue != null)
+        {
+            openingDialogue.PlayStory();
+
+            while (openingDialogue.IsPlaying)
+                yield return null;
+
+            openingDialogue.gameObject.SetActive(false);
+        }
+
         if (bossPrefab == null || bossSpawnPoint == null)
         {
             Debug.LogError("WaveSpawner: ใส่ Boss Prefab และ Boss Spawn Point", this);
