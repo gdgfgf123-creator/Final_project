@@ -321,7 +321,23 @@ public abstract class Boss : Enemy
     {
         enrageEndTime = Time.time + duration;
     }
+    private IEnumerator RunBossChoice(int hpPercent)
+    {
+        isChoosing = true;
 
+        if (bossChoiceDialogue == null)
+            bossChoiceDialogue =
+                FindFirstObjectByType<BossChoiceDialogue>();
+
+        if (bossChoiceDialogue != null &&
+            bossChoiceDialogue.StartChoice(this, hpPercent))
+        {
+            while (bossChoiceDialogue.IsPlaying)
+                yield return null;
+        }
+
+        isChoosing = false;
+    }
     protected override float GetFireInterval()
     {
         return IsEnraged
