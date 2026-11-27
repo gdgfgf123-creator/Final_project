@@ -145,7 +145,7 @@ MonoBehaviour:
   moveDistance: 3
   bulletPrefab: {fileID: 8592482104669203654, guid: bcf5404427bff934f843d4a27699243f, type: 3}
   firePoint: {fileID: 5314209113170526702}
-  fireInterval: 1
+  fireInterval: 0.5
   enableBossSkills: 1
   attackPatterns:
   - {fileID: 4354413634100835918}
@@ -159,6 +159,10 @@ MonoBehaviour:
   phaseTwoSpread: 360
   contactDamage: 1
   encounterDialogue: {fileID: 0}
+  victoryDialogue: {fileID: 0}
+  bossChoiceDialogue: {fileID: 0}
+  weaknessMultiplier: 1.35
+  enrageMultiplier: 2
   player: {fileID: 0}
 --- !u!114 &1791343712243710218
 MonoBehaviour:

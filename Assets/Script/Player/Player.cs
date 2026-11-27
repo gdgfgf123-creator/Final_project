@@ -18,6 +18,9 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private Movement movement;
 
+    [Header("Shield")]
+    [SerializeField] private GraveShield graveShield;
+
     [Header("Invincibility Effect")]
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField, Min(0.02f)] private float blinkInterval = 0.1f;
@@ -33,6 +36,9 @@ public class Player : MonoBehaviour
 
         if (playerSprite != null)
             normalColor = playerSprite.color;
+
+        if (graveShield == null)
+            graveShield = GetComponent<GraveShield>();
     }
 
     public void Move(Vector2 direction)
@@ -55,7 +61,8 @@ public class Player : MonoBehaviour
     {
         if (currentHP <= 0 || amount <= 0)
             return;
-
+        if (graveShield != null && graveShield.IsShieldActive)
+            return;
         if (Time.time < nextDamageTime)
             return;
 

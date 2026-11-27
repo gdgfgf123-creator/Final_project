@@ -8,9 +8,17 @@ public class InputController : MonoBehaviour
     [SerializeField] private KeyCode moveLeft = KeyCode.A;
     [SerializeField] private KeyCode moveRight = KeyCode.D;
 
-    [Header("Power Input")]
+    [Header("Wind Sword")]
     [SerializeField] private KeyCode windSwordKey = KeyCode.E;
     [SerializeField] private WindSword windSword;
+
+    [Header("Grave Shield")]
+    [SerializeField] private KeyCode graveShieldKey = KeyCode.Q;
+    [SerializeField] private GraveShield graveShield;
+
+    [Header("Flame Bow")]
+    [SerializeField] private KeyCode flameBowKey = KeyCode.R;
+    [SerializeField] private FlameBow flameBow;
 
     [SerializeField] private Player player;
 
@@ -21,6 +29,12 @@ public class InputController : MonoBehaviour
 
         if (windSword == null)
             windSword = GetComponent<WindSword>();
+
+        if (graveShield == null)
+            graveShield = GetComponent<GraveShield>();
+
+        if (flameBow == null)
+            flameBow = GetComponent<FlameBow>();
     }
 
     private void Update()
@@ -54,7 +68,14 @@ public class InputController : MonoBehaviour
 
     public void ReadPowerInput()
     {
-        if (Input.GetKeyDown(windSwordKey) && windSword != null)
-            windSword.Use();
+        ReadPower(windSwordKey, windSword);
+        ReadPower(graveShieldKey, graveShield);
+        ReadPower(flameBowKey, flameBow);
+    }
+
+    private void ReadPower(KeyCode key, Power power)
+    {
+        if (Input.GetKeyDown(key) && power != null)
+            power.Use();
     }
 }
